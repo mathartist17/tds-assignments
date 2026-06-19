@@ -1,0 +1,43 @@
+
+Version:          Code 1.125.0 (93cfdd489c3b228840d0f86ec77c3636277c93ea, 2026-06-15T22:24:03Z)
+OS Version:       Darwin arm64 25.5.0
+CPUs:             Apple M1 (8 x 2400)
+Memory (System):  8.00GB (0.09GB free)
+Load (avg):       2, 2, 2
+VM:               0%
+Screen Reader:    no
+Process Argv:     . --crash-reporter-id f24a7c59-b789-495b-a3cd-3cc4fc4d5d08
+GPU Status:       2d_canvas:                              enabled
+                  GPU0:                                   VENDOR= 0x106b [Google Inc. (Apple)], DEVICE=0x0000 [ANGLE (Apple, ANGLE Metal Renderer: Apple M1, Version 26.5.1 (Build 25F80))], DRIVER_VENDOR=Apple, DRIVER_VERSION=26.5.1 *ACTIVE*
+                  Machine model name:                     MacBookAir
+                  Machine model version:                  10.1
+                  direct_rendering_display_compositor:    disabled_off_ok
+                  gpu_compositing:                        enabled
+                  multiple_raster_threads:                enabled_on
+                  opengl:                                 enabled_on
+                  rasterization:                          enabled
+                  raw_draw:                               disabled_off_ok
+                  skia_graphite:                          enabled_on
+                  trees_in_viz:                           disabled_off
+                  video_decode:                           enabled
+                  video_encode:                           enabled
+                  webgl:                                  enabled
+                  webgpu:                                 enabled
+                  webnn:                                  disabled_off
+
+CPU %	Mem MB	   PID	Process
+    0	17592186044	  2420	code
+    0	7740561860	  2426	   gpu-process
+    0	4925812092	  2427	   utility-network-service
+    0	28851185113	  2433	window [1] (code.sh — tds-assignments)
+    0	9851624185	  2435	shared-process
+    0	7036874418	  2436	file-watcher [1]
+    0	28851185113	  2437	extension-host [1]
+
+Workspace Stats: 
+|  Window (code.sh — tds-assignments)
+|    Folder (tds-assignments): 2 files
+|      File types: txt(1) sh(1)
+|      Conf files:
+
+
