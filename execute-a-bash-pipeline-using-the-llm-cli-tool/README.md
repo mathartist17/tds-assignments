@@ -7,3 +7,7 @@
 `llm "list all JavaScript files in the current directory and summarize their purpose in one line each"`
 
 - Fetch the token from AI pipe when prompted [Link here](https://aipipe.org/login)
+
+## References
+
+- [LLM CLI Tool Documentation](https://llm.datasette.io/en/stable/)
