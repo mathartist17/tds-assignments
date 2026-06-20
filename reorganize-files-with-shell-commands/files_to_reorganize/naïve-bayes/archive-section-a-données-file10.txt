@@ -1,0 +1,10 @@
+category: naïve-bayes
+
+TECHNICAL DOCUMENTATION - File 10
+
+This is a test file for the reorganization exercise.
+Path: archive/section-a/données/file10.txt
+Category: naïve-bayes
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

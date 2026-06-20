@@ -1,0 +1,10 @@
+category: résumé
+
+TECHNICAL DOCUMENTATION - File 2
+
+This is a test file for the reorganization exercise.
+Path: project/spaces here/file02.txt
+Category: résumé
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
