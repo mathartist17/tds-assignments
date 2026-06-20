@@ -8,3 +8,5 @@ LC_ALL=C sort |
 sha256sum
 ```
 - The given script might not work because the nested directories or files might have name with spaces and the original script has not handled it properly. So, I have added while loop with the IFS as null character, hence, the entire string will be considered as the file name
+
+[Credits](https://github.com/sanand0/tools-in-data-science-public/discussions/267#discussioncomment-17364648)
