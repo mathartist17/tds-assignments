@@ -1,0 +1,50 @@
+{"id":"log-040","ts":"2026-05-17T19:15:30Z","region":"fra","service":"release-bot","severity":"notice","message":"canary deploy promoted after health check passed"}
+{"id":"log-011","ts":"2026-05-20T23:50:13Z","region":"bom","service":"release-bot","severity":"debug","message":"canary deploy promoted after health check passed"}
+{"id":"log-043","ts":"2026-05-20T15:06:07Z","region":"bom","service":"helpdesk-sync","severity":"warning","message":"customer asked for invoice copy in chat"}
+{"id":"log-019","ts":"2026-05-27T22:46:19Z","region":"fra","service":"release-bot","severity":"debug","message":"feature flag rollout advanced to production cohort"}
+{"id":"log-018","ts":"2026-05-10T02:40:42Z","region":"gru","service":"warehouse-loader","severity":"info","message":"daily export contained invalid UTF-8 payload"}
+{"id":"log-029","ts":"2026-05-16T16:23:34Z","region":"syd","service":"release-bot","severity":"notice","message":"canary deploy promoted after health check passed"}
+{"id":"log-027","ts":"2026-05-14T10:40:32Z","region":"gru","service":"auth-gateway","severity":"error","message":"impossible travel login blocked by policy"}
+{"id":"log-017","ts":"2026-05-27T08:48:50Z","region":"iad","service":"billing-api","severity":"error","message":"card processor declined settlement batch"}
+{"id":"log-013","ts":"2026-05-25T13:56:13Z","region":"bom","service":"warehouse-loader","severity":"debug","message":"dedupe job found conflicting product keys"}
+{"id":"log-042","ts":"2026-05-12T19:12:44Z","region":"syd","service":"auth-gateway","severity":"error","message":"impossible travel login blocked by policy"}
+{"id":"log-035","ts":"2026-05-27T18:43:45Z","region":"fra","service":"warehouse-loader","severity":"warning","message":"schema drift detected nullable column mismatch"}
+{"id":"log-037","ts":"2026-05-27T16:13:57Z","region":"bom","service":"auth-gateway","severity":"warning","message":"expired SSO token rejected during session refresh"}
+{"id":"log-012","ts":"2026-05-11T17:10:03Z","region":"syd","service":"helpdesk-sync","severity":"error","message":"knowledge base article linked in reply"}
+{"id":"log-048","ts":"2026-05-22T18:55:06Z","region":"fra","service":"auth-gateway","severity":"warning","message":"expired SSO token rejected during session refresh"}
+{"id":"log-025","ts":"2026-05-25T12:51:37Z","region":"bom","service":"auth-gateway","severity":"error","message":"impossible travel login blocked by policy"}
+{"id":"log-047","ts":"2026-05-10T12:15:48Z","region":"gru","service":"release-bot","severity":"warning","message":"migration completed before service restart"}
+{"id":"log-015","ts":"2026-05-18T02:38:35Z","region":"sin","service":"billing-api","severity":"debug","message":"refund queue stalled after gateway timeout"}
+{"id":"log-033","ts":"2026-05-21T16:55:04Z","region":"gru","service":"helpdesk-sync","severity":"debug","message":"knowledge base article linked in reply"}
+{"id":"log-022","ts":"2026-05-18T04:48:56Z","region":"sin","service":"release-bot","severity":"debug","message":"feature flag rollout advanced to production cohort"}
+{"id":"log-016","ts":"2026-05-27T09:12:22Z","region":"sin","service":"helpdesk-sync","severity":"info","message":"customer asked for invoice copy in chat"}
+{"id":"log-041","ts":"2026-05-27T04:46:18Z","region":"gru","service":"auth-gateway","severity":"debug","message":"impossible travel login blocked by policy"}
+{"id":"log-046","ts":"2026-05-24T13:36:58Z","region":"bom","service":"warehouse-loader","severity":"debug","message":"daily export contained invalid UTF-8 payload"}
+{"id":"log-020","ts":"2026-05-17T16:05:00Z","region":"gru","service":"helpdesk-sync","severity":"notice","message":"weekly satisfaction survey digest delivered"}
+{"id":"log-024","ts":"2026-05-19T02:28:30Z","region":"sin","service":"release-bot","severity":"info","message":"migration completed before service restart"}
+{"id":"log-007","ts":"2026-05-22T13:54:26Z","region":"syd","service":"release-bot","severity":"warning","message":"migration completed before service restart"}
+{"id":"log-050","ts":"2026-05-19T04:57:44Z","region":"fra","service":"billing-api","severity":"error","message":"subscription renewal failed during payment capture"}
+{"id":"log-005","ts":"2026-05-24T02:54:01Z","region":"fra","service":"warehouse-loader","severity":"notice","message":"dedupe job found conflicting product keys"}
+{"id":"log-006","ts":"2026-05-11T11:13:34Z","region":"fra","service":"warehouse-loader","severity":"notice","message":"schema drift detected nullable column mismatch"}
+{"id":"log-039","ts":"2026-05-26T17:42:46Z","region":"fra","service":"warehouse-loader","severity":"debug","message":"schema drift detected nullable column mismatch"}
+{"id":"log-008","ts":"2026-05-12T15:35:29Z","region":"sin","service":"release-bot","severity":"warning","message":"container image pinned for blue green release"}
+{"id":"log-023","ts":"2026-05-25T22:30:29Z","region":"gru","service":"billing-api","severity":"error","message":"card processor declined settlement batch"}
+{"id":"log-001","ts":"2026-05-16T20:44:25Z","region":"bom","service":"auth-gateway","severity":"error","message":"impossible travel login blocked by policy"}
+{"id":"log-044","ts":"2026-05-16T01:29:43Z","region":"fra","service":"auth-gateway","severity":"info","message":"impossible travel login blocked by policy"}
+{"id":"log-002","ts":"2026-05-16T06:12:24Z","region":"fra","service":"helpdesk-sync","severity":"warning","message":"agent added internal note to resolved ticket"}
+{"id":"log-034","ts":"2026-05-23T20:44:45Z","region":"gru","service":"helpdesk-sync","severity":"debug","message":"knowledge base article linked in reply"}
+{"id":"log-028","ts":"2026-05-14T08:25:51Z","region":"iad","service":"release-bot","severity":"debug","message":"canary deploy promoted after health check passed"}
+{"id":"log-030","ts":"2026-05-13T10:34:39Z","region":"iad","service":"warehouse-loader","severity":"warning","message":"CSV ingest rejected rows with missing customer_id"}
+{"id":"log-014","ts":"2026-05-20T22:13:16Z","region":"fra","service":"auth-gateway","severity":"warning","message":"MFA challenge failed after repeated attempts"}
+{"id":"log-009","ts":"2026-05-14T00:12:27Z","region":"sin","service":"warehouse-loader","severity":"error","message":"daily export contained invalid UTF-8 payload"}
+{"id":"log-031","ts":"2026-05-26T10:54:52Z","region":"gru","service":"auth-gateway","severity":"debug","message":"password spray detected for tenant login"}
+{"id":"log-010","ts":"2026-05-27T20:22:58Z","region":"gru","service":"auth-gateway","severity":"info","message":"password spray detected for tenant login"}
+{"id":"log-036","ts":"2026-05-25T20:07:47Z","region":"gru","service":"release-bot","severity":"info","message":"canary deploy promoted after health check passed"}
+{"id":"log-049","ts":"2026-05-20T14:41:12Z","region":"fra","service":"billing-api","severity":"notice","message":"refund queue stalled after gateway timeout"}
+{"id":"log-004","ts":"2026-05-10T20:42:53Z","region":"gru","service":"auth-gateway","severity":"debug","message":"MFA challenge failed after repeated attempts"}
+{"id":"log-045","ts":"2026-05-11T03:31:13Z","region":"gru","service":"auth-gateway","severity":"warning","message":"expired SSO token rejected during session refresh"}
+{"id":"log-003","ts":"2026-05-21T08:50:13Z","region":"fra","service":"release-bot","severity":"warning","message":"migration completed before service restart"}
+{"id":"log-026","ts":"2026-05-11T14:50:56Z","region":"bom","service":"release-bot","severity":"error","message":"container image pinned for blue green release"}
+{"id":"log-032","ts":"2026-05-23T12:10:41Z","region":"bom","service":"helpdesk-sync","severity":"debug","message":"agent added internal note to resolved ticket"}
+{"id":"log-021","ts":"2026-05-19T17:26:31Z","region":"fra","service":"warehouse-loader","severity":"info","message":"daily export contained invalid UTF-8 payload"}
+{"id":"log-038","ts":"2026-05-23T02:04:04Z","region":"iad","service":"helpdesk-sync","severity":"error","message":"customer asked for invoice copy in chat"}
