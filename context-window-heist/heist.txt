@@ -1,0 +1,839 @@
+# Context Window Heist
+
+Document length target: about 14,845 tokens.
+Instruction: answer using the latest fact when older and newer statements contradict each other.
+
+## Questions
+1. What is the current active retrieval strategy?
+2. What is the current reranker model code?
+3. What is the current chunk overlap in tokens?
+4. What is the current per-section summary budget in tokens?
+5. What is the current citation tag prefix?
+6. What is the current recency rule?
+7. What is the current needle namespace?
+8. What is the current target compression ratio?
+9. What is the current answer checksum?
+10. What is the current dispatch queue name?
+
+## Haystack
+Operational note 0001: The reranking scores audit for lane 833 records shard 87. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0002: The prompt packing audit for lane 483 records shard 11. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0003: The prompt packing audit for lane 674 records shard 87. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0004: The recency conflicts audit for lane 597 records shard 92. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0005: The summary drift audit for lane 185 records shard 51. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0006: The recency conflicts audit for lane 699 records shard 92. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0007: The summary drift audit for lane 991 records shard 95. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0008: The token accounting audit for lane 983 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0009: The recency conflicts audit for lane 655 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0010: The reranking scores audit for lane 522 records shard 77. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0011: The summary drift audit for lane 700 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Earlier planning memo: the active retrieval strategy was map-reduce-summaries. This line is stale.
+
+Operational note 0012: The token accounting audit for lane 253 records shard 44. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0013: The chunk boundaries audit for lane 729 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0014: The chunk boundaries audit for lane 641 records shard 40. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0015: The recency conflicts audit for lane 919 records shard 25. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0016: The summary drift audit for lane 422 records shard 89. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0017: The sliding windows audit for lane 188 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0018: The recency conflicts audit for lane 267 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0019: The prompt packing audit for lane 378 records shard 60. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0020: The retrieval traces audit for lane 693 records shard 70. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0021: The chunk boundaries audit for lane 975 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0022: The chunk boundaries audit for lane 439 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0023: The token accounting audit for lane 730 records shard 27. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0024: The prompt packing audit for lane 207 records shard 68. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0025: The prompt packing audit for lane 730 records shard 30. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0026: The evidence ledgers audit for lane 589 records shard 38. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0027: The prompt packing audit for lane 701 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0028: The prompt packing audit for lane 975 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0029: The evidence ledgers audit for lane 488 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0030: The metadata filters audit for lane 213 records shard 42. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0031: The chunk boundaries audit for lane 219 records shard 27. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0032: The evidence ledgers audit for lane 844 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0033: The summary drift audit for lane 411 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0034: The token accounting audit for lane 238 records shard 20. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0035: The retrieval traces audit for lane 796 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Archive note: the reranker model code was rrk-41d. This has been superseded.
+
+Operational note 0036: The recency conflicts audit for lane 884 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0037: The prompt packing audit for lane 708 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0038: The evidence ledgers audit for lane 434 records shard 34. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0039: The sliding windows audit for lane 868 records shard 82. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q1]: The current active retrieval strategy is sliding-window-v2. Use this value.
+
+Operational note 0040: The prompt packing audit for lane 931 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0041: The prompt packing audit for lane 995 records shard 35. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0042: The retrieval traces audit for lane 350 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0043: The retrieval traces audit for lane 916 records shard 55. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0044: The retrieval traces audit for lane 374 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0045: The token accounting audit for lane 622 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0046: The sliding windows audit for lane 214 records shard 46. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0047: The recency conflicts audit for lane 259 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0048: The prompt packing audit for lane 330 records shard 67. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0049: The prompt packing audit for lane 157 records shard 24. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0050: The chunk boundaries audit for lane 121 records shard 91. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0051: The sliding windows audit for lane 561 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0052: The prompt packing audit for lane 811 records shard 93. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q2]: The reranker model code is rrk-29c. Use this value.
+
+Operational note 0053: The metadata filters audit for lane 208 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0054: The evidence ledgers audit for lane 848 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0055: The sliding windows audit for lane 496 records shard 89. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0056: The recency conflicts audit for lane 572 records shard 46. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0057: The retrieval traces audit for lane 680 records shard 94. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0058: The prompt packing audit for lane 470 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0059: The chunk boundaries audit for lane 911 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0060: The reranking scores audit for lane 949 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0061: The token accounting audit for lane 385 records shard 44. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0062: The recency conflicts audit for lane 967 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0063: The token accounting audit for lane 948 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0064: The chunk boundaries audit for lane 790 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0065: The chunk boundaries audit for lane 446 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0066: The chunk boundaries audit for lane 592 records shard 92. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0067: The prompt packing audit for lane 341 records shard 73. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0068: The chunk boundaries audit for lane 979 records shard 12. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0069: The prompt packing audit for lane 753 records shard 61. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0070: The metadata filters audit for lane 369 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Prototype setting: chunk overlap was 192 tokens. This value is obsolete.
+
+Operational note 0071: The chunk boundaries audit for lane 515 records shard 60. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0072: The token accounting audit for lane 817 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0073: The metadata filters audit for lane 503 records shard 24. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0074: The metadata filters audit for lane 782 records shard 21. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0075: The metadata filters audit for lane 923 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0076: The sliding windows audit for lane 732 records shard 34. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0077: The metadata filters audit for lane 402 records shard 77. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0078: The reranking scores audit for lane 756 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0079: The chunk boundaries audit for lane 160 records shard 41. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0080: The recency conflicts audit for lane 897 records shard 83. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0081: The summary drift audit for lane 123 records shard 58. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0082: The metadata filters audit for lane 435 records shard 16. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0083: The reranking scores audit for lane 398 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0084: The chunk boundaries audit for lane 458 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0085: The recency conflicts audit for lane 480 records shard 70. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0086: The retrieval traces audit for lane 608 records shard 41. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0087: The sliding windows audit for lane 429 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0088: The recency conflicts audit for lane 172 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0089: The summary drift audit for lane 753 records shard 67. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0090: The evidence ledgers audit for lane 949 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0091: The metadata filters audit for lane 539 records shard 40. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0092: The sliding windows audit for lane 783 records shard 95. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0093: The recency conflicts audit for lane 196 records shard 30. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0094: The metadata filters audit for lane 414 records shard 11. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0095: The retrieval traces audit for lane 171 records shard 49. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0096: The token accounting audit for lane 223 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0097: The chunk boundaries audit for lane 952 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q3]: The chunk overlap is 160 tokens. Use this value.
+
+Operational note 0098: The sliding windows audit for lane 169 records shard 71. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0099: The prompt packing audit for lane 931 records shard 93. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0100: The token accounting audit for lane 356 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0101: The recency conflicts audit for lane 314 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0102: The chunk boundaries audit for lane 529 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0103: The reranking scores audit for lane 567 records shard 54. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0104: The recency conflicts audit for lane 894 records shard 66. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0105: The retrieval traces audit for lane 987 records shard 83. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0106: The prompt packing audit for lane 982 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0107: The summary drift audit for lane 410 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Old summarizer card: per-section summaries were capped at 220 tokens. Do not use it.
+
+Operational note 0108: The sliding windows audit for lane 909 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0109: The recency conflicts audit for lane 692 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0110: The recency conflicts audit for lane 386 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0111: The metadata filters audit for lane 878 records shard 34. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0112: The reranking scores audit for lane 141 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0113: The retrieval traces audit for lane 584 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0114: The reranking scores audit for lane 994 records shard 50. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0115: The evidence ledgers audit for lane 886 records shard 87. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0116: The recency conflicts audit for lane 634 records shard 37. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0117: The prompt packing audit for lane 894 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0118: The evidence ledgers audit for lane 861 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0119: The retrieval traces audit for lane 974 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0120: The evidence ledgers audit for lane 517 records shard 40. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0121: The sliding windows audit for lane 195 records shard 67. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0122: The sliding windows audit for lane 251 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0123: The token accounting audit for lane 194 records shard 26. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0124: The retrieval traces audit for lane 272 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0125: The sliding windows audit for lane 798 records shard 57. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0126: The recency conflicts audit for lane 302 records shard 72. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0127: The retrieval traces audit for lane 201 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0128: The sliding windows audit for lane 653 records shard 27. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0129: The chunk boundaries audit for lane 247 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0130: The retrieval traces audit for lane 174 records shard 77. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0131: The reranking scores audit for lane 338 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0132: The recency conflicts audit for lane 296 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0133: The chunk boundaries audit for lane 894 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0134: The recency conflicts audit for lane 619 records shard 46. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q4]: The per-section summary budget is 260 tokens. Use this value.
+
+Operational note 0135: The summary drift audit for lane 664 records shard 11. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0136: The evidence ledgers audit for lane 528 records shard 82. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0137: The chunk boundaries audit for lane 559 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Legacy citation convention: evidence tags began with CTX. It is no longer valid.
+
+Operational note 0138: The chunk boundaries audit for lane 654 records shard 73. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0139: The evidence ledgers audit for lane 746 records shard 41. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0140: The reranking scores audit for lane 169 records shard 42. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0141: The token accounting audit for lane 219 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0142: The prompt packing audit for lane 131 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0143: The recency conflicts audit for lane 198 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0144: The token accounting audit for lane 327 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0145: The sliding windows audit for lane 259 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0146: The chunk boundaries audit for lane 566 records shard 91. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0147: The summary drift audit for lane 631 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0148: The evidence ledgers audit for lane 107 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0149: The prompt packing audit for lane 153 records shard 46. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0150: The chunk boundaries audit for lane 244 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0151: The chunk boundaries audit for lane 166 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0152: The sliding windows audit for lane 207 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0153: The chunk boundaries audit for lane 864 records shard 71. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0154: The recency conflicts audit for lane 694 records shard 69. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0155: The token accounting audit for lane 573 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0156: The chunk boundaries audit for lane 910 records shard 90. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0157: The sliding windows audit for lane 324 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0158: The evidence ledgers audit for lane 649 records shard 35. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0159: The summary drift audit for lane 646 records shard 42. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0160: The token accounting audit for lane 521 records shard 30. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0161: The prompt packing audit for lane 967 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0162: The reranking scores audit for lane 415 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0163: The evidence ledgers audit for lane 899 records shard 79. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0164: The sliding windows audit for lane 623 records shard 22. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0165: The evidence ledgers audit for lane 207 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0166: The reranking scores audit for lane 965 records shard 65. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Retired conflict policy: the recency rule was latest-wins. Ignore this stale policy.
+
+Operational note 0167: The token accounting audit for lane 833 records shard 65. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0168: The chunk boundaries audit for lane 890 records shard 51. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0169: The reranking scores audit for lane 921 records shard 52. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0170: The chunk boundaries audit for lane 412 records shard 66. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0171: The reranking scores audit for lane 642 records shard 68. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0172: The sliding windows audit for lane 433 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0173: The summary drift audit for lane 734 records shard 51. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0174: The sliding windows audit for lane 754 records shard 80. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0175: The metadata filters audit for lane 274 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0176: The evidence ledgers audit for lane 302 records shard 70. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0177: The reranking scores audit for lane 832 records shard 85. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0178: The prompt packing audit for lane 409 records shard 24. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0179: The prompt packing audit for lane 621 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0180: The sliding windows audit for lane 823 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0181: The sliding windows audit for lane 834 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0182: The summary drift audit for lane 827 records shard 22. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q5]: The citation tag prefix is ANCHOR. Use this value.
+
+Operational note 0183: The retrieval traces audit for lane 640 records shard 58. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0184: The summary drift audit for lane 562 records shard 48. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0185: The token accounting audit for lane 710 records shard 84. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0186: The evidence ledgers audit for lane 905 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0187: The metadata filters audit for lane 628 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0188: The recency conflicts audit for lane 425 records shard 90. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0189: The token accounting audit for lane 747 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0190: The retrieval traces audit for lane 984 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0191: The reranking scores audit for lane 412 records shard 95. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0192: The prompt packing audit for lane 796 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0193: The retrieval traces audit for lane 317 records shard 36. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0194: The retrieval traces audit for lane 627 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0195: The recency conflicts audit for lane 220 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q6]: The recency rule is revision-wins. Use this value.
+
+Operational note 0196: The evidence ledgers audit for lane 716 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0197: The prompt packing audit for lane 665 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0198: The prompt packing audit for lane 167 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0199: The summary drift audit for lane 895 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0200: The token accounting audit for lane 241 records shard 80. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0201: The metadata filters audit for lane 375 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Deprecated namespace registry: needles were stored under delta-vault. This was replaced.
+
+Operational note 0202: The token accounting audit for lane 622 records shard 37. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0203: The chunk boundaries audit for lane 100 records shard 55. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0204: The summary drift audit for lane 948 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0205: The reranking scores audit for lane 895 records shard 54. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0206: The metadata filters audit for lane 182 records shard 50. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0207: The recency conflicts audit for lane 475 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0208: The token accounting audit for lane 702 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0209: The token accounting audit for lane 331 records shard 90. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0210: The recency conflicts audit for lane 680 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0211: The summary drift audit for lane 154 records shard 52. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0212: The summary drift audit for lane 945 records shard 36. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0213: The token accounting audit for lane 959 records shard 26. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0214: The prompt packing audit for lane 927 records shard 71. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0215: The recency conflicts audit for lane 259 records shard 38. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0216: The summary drift audit for lane 702 records shard 29. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0217: The prompt packing audit for lane 768 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0218: The summary drift audit for lane 203 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q7]: The needle namespace is alpha-ledger. Use this value.
+
+Operational note 0219: The chunk boundaries audit for lane 677 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0220: The sliding windows audit for lane 865 records shard 65. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0221: The reranking scores audit for lane 276 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0222: The metadata filters audit for lane 398 records shard 67. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0223: The reranking scores audit for lane 754 records shard 73. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0224: The token accounting audit for lane 535 records shard 51. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0225: The reranking scores audit for lane 409 records shard 41. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0226: The metadata filters audit for lane 637 records shard 49. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0227: The retrieval traces audit for lane 264 records shard 60. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0228: The evidence ledgers audit for lane 650 records shard 11. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0229: The sliding windows audit for lane 521 records shard 69. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Old compression worksheet: target compression ratio was 6:1. Treat as stale.
+
+Operational note 0230: The reranking scores audit for lane 950 records shard 25. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0231: The chunk boundaries audit for lane 365 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0232: The evidence ledgers audit for lane 505 records shard 34. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0233: The metadata filters audit for lane 484 records shard 20. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0234: The token accounting audit for lane 403 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0235: The metadata filters audit for lane 351 records shard 58. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0236: The summary drift audit for lane 861 records shard 52. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0237: The recency conflicts audit for lane 112 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0238: The evidence ledgers audit for lane 183 records shard 57. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0239: The recency conflicts audit for lane 785 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0240: The summary drift audit for lane 776 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0241: The reranking scores audit for lane 422 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0242: The prompt packing audit for lane 693 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0243: The metadata filters audit for lane 218 records shard 86. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0244: The metadata filters audit for lane 889 records shard 27. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0245: The retrieval traces audit for lane 244 records shard 73. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0246: The token accounting audit for lane 577 records shard 10. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0247: The summary drift audit for lane 332 records shard 10. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0248: The sliding windows audit for lane 275 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0249: The recency conflicts audit for lane 937 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0250: The prompt packing audit for lane 780 records shard 79. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0251: The token accounting audit for lane 830 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q8]: The target compression ratio is 8:1. Use this value.
+
+Operational note 0252: The retrieval traces audit for lane 385 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0253: The sliding windows audit for lane 808 records shard 16. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0254: The evidence ledgers audit for lane 825 records shard 20. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0255: The recency conflicts audit for lane 646 records shard 13. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0256: The summary drift audit for lane 309 records shard 86. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0257: The evidence ledgers audit for lane 127 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0258: The summary drift audit for lane 312 records shard 66. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0259: The retrieval traces audit for lane 769 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0260: The token accounting audit for lane 285 records shard 90. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0261: The retrieval traces audit for lane 712 records shard 89. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0262: The evidence ledgers audit for lane 980 records shard 16. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0263: The chunk boundaries audit for lane 543 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0264: The evidence ledgers audit for lane 352 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Dry-run checksum: answer checksum was CWH-8043. The dry run has expired.
+
+Operational note 0265: The token accounting audit for lane 433 records shard 12. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0266: The reranking scores audit for lane 249 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0267: The evidence ledgers audit for lane 222 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0268: The reranking scores audit for lane 387 records shard 76. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0269: The retrieval traces audit for lane 288 records shard 49. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0270: The evidence ledgers audit for lane 264 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0271: The prompt packing audit for lane 311 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0272: The sliding windows audit for lane 896 records shard 61. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0273: The prompt packing audit for lane 975 records shard 28. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0274: The evidence ledgers audit for lane 688 records shard 26. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0275: The recency conflicts audit for lane 874 records shard 52. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0276: The summary drift audit for lane 886 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0277: The prompt packing audit for lane 648 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0278: The metadata filters audit for lane 942 records shard 61. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0279: The retrieval traces audit for lane 854 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0280: The summary drift audit for lane 589 records shard 69. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0281: The recency conflicts audit for lane 585 records shard 49. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0282: The reranking scores audit for lane 292 records shard 22. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0283: The reranking scores audit for lane 111 records shard 93. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0284: The recency conflicts audit for lane 606 records shard 66. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0285: The prompt packing audit for lane 351 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0286: The retrieval traces audit for lane 925 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0287: The recency conflicts audit for lane 816 records shard 20. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0288: The sliding windows audit for lane 626 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0289: The metadata filters audit for lane 412 records shard 38. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0290: The retrieval traces audit for lane 629 records shard 70. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0291: The metadata filters audit for lane 651 records shard 94. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0292: The reranking scores audit for lane 839 records shard 41. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0293: The token accounting audit for lane 991 records shard 80. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0294: The summary drift audit for lane 296 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0295: The recency conflicts audit for lane 396 records shard 68. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0296: The metadata filters audit for lane 546 records shard 65. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0297: The token accounting audit for lane 877 records shard 54. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Previous queue bulletin: dispatch queue was queue-topaz. This bulletin is stale.
+
+Operational note 0298: The recency conflicts audit for lane 408 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0299: The retrieval traces audit for lane 245 records shard 32. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0300: The retrieval traces audit for lane 231 records shard 22. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0301: The prompt packing audit for lane 364 records shard 22. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0302: The prompt packing audit for lane 520 records shard 63. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0303: The recency conflicts audit for lane 366 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0304: The prompt packing audit for lane 599 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q9]: The answer checksum is CWH-6927. Use this value.
+
+Operational note 0305: The summary drift audit for lane 571 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0306: The token accounting audit for lane 928 records shard 94. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0307: The token accounting audit for lane 549 records shard 90. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0308: The prompt packing audit for lane 199 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0309: The token accounting audit for lane 191 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0310: The sliding windows audit for lane 982 records shard 54. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0311: The recency conflicts audit for lane 764 records shard 66. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0312: The chunk boundaries audit for lane 206 records shard 39. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0313: The prompt packing audit for lane 554 records shard 68. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0314: The chunk boundaries audit for lane 261 records shard 92. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0315: The reranking scores audit for lane 637 records shard 60. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0316: The prompt packing audit for lane 764 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0317: The sliding windows audit for lane 442 records shard 16. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0318: The reranking scores audit for lane 498 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0319: The token accounting audit for lane 776 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0320: The retrieval traces audit for lane 621 records shard 53. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0321: The metadata filters audit for lane 631 records shard 65. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0322: The token accounting audit for lane 303 records shard 88. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0323: The summary drift audit for lane 443 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0324: The recency conflicts audit for lane 878 records shard 99. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0325: The reranking scores audit for lane 625 records shard 83. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0326: The recency conflicts audit for lane 398 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0327: The sliding windows audit for lane 240 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0328: The prompt packing audit for lane 921 records shard 31. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0329: The sliding windows audit for lane 521 records shard 17. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0330: The summary drift audit for lane 502 records shard 23. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0331: The recency conflicts audit for lane 630 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0332: The retrieval traces audit for lane 183 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0333: The metadata filters audit for lane 477 records shard 93. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0334: The sliding windows audit for lane 225 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0335: The evidence ledgers audit for lane 702 records shard 40. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+LATEST FACT [Q10]: The dispatch queue name is queue-pulsar. Use this value.
+
+Operational note 0336: The sliding windows audit for lane 504 records shard 51. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0337: The token accounting audit for lane 953 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0338: The metadata filters audit for lane 677 records shard 69. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0339: The metadata filters audit for lane 493 records shard 21. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0340: The reranking scores audit for lane 778 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0341: The evidence ledgers audit for lane 453 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0342: The metadata filters audit for lane 788 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0343: The retrieval traces audit for lane 925 records shard 37. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0344: The prompt packing audit for lane 943 records shard 96. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0345: The recency conflicts audit for lane 213 records shard 34. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0346: The reranking scores audit for lane 517 records shard 62. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0347: The recency conflicts audit for lane 843 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0348: The retrieval traces audit for lane 156 records shard 33. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0349: The summary drift audit for lane 606 records shard 60. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0350: The prompt packing audit for lane 287 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0351: The reranking scores audit for lane 405 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0352: The recency conflicts audit for lane 922 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0353: The token accounting audit for lane 287 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0354: The sliding windows audit for lane 246 records shard 38. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0355: The token accounting audit for lane 113 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0356: The metadata filters audit for lane 330 records shard 95. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0357: The metadata filters audit for lane 283 records shard 43. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0358: The sliding windows audit for lane 665 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0359: The evidence ledgers audit for lane 246 records shard 87. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0360: The metadata filters audit for lane 935 records shard 97. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0361: The reranking scores audit for lane 767 records shard 18. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0362: The retrieval traces audit for lane 591 records shard 48. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0363: The reranking scores audit for lane 947 records shard 11. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0364: The chunk boundaries audit for lane 445 records shard 37. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0365: The token accounting audit for lane 701 records shard 49. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0366: The sliding windows audit for lane 471 records shard 42. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0367: The retrieval traces audit for lane 389 records shard 52. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0368: The retrieval traces audit for lane 103 records shard 74. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0369: The evidence ledgers audit for lane 528 records shard 27. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0370: The metadata filters audit for lane 921 records shard 86. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0371: The token accounting audit for lane 520 records shard 91. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0372: The metadata filters audit for lane 638 records shard 83. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0373: The chunk boundaries audit for lane 409 records shard 13. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0374: The metadata filters audit for lane 658 records shard 86. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0375: The evidence ledgers audit for lane 170 records shard 78. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0376: The summary drift audit for lane 303 records shard 46. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0377: The summary drift audit for lane 672 records shard 81. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0378: The reranking scores audit for lane 540 records shard 64. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0379: The retrieval traces audit for lane 223 records shard 87. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0380: The retrieval traces audit for lane 305 records shard 57. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0381: The metadata filters audit for lane 575 records shard 99. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0382: The token accounting audit for lane 682 records shard 47. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0383: The recency conflicts audit for lane 714 records shard 98. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0384: The recency conflicts audit for lane 974 records shard 57. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0385: The summary drift audit for lane 828 records shard 75. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0386: The token accounting audit for lane 135 records shard 45. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0387: The metadata filters audit for lane 190 records shard 85. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0388: The recency conflicts audit for lane 668 records shard 59. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0389: The summary drift audit for lane 985 records shard 79. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0390: The metadata filters audit for lane 125 records shard 19. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
+
+Operational note 0391: The retrieval traces audit for lane 812 records shard 61. This paragraph is deliberately ordinary context. It mentions retrieval, chunking, summaries, ranking, model calls, and token budgets, but it does not answer any of the ten numbered questions. Keep it only if your pipeline believes it is useful evidence.
