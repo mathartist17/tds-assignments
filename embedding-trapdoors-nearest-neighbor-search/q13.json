@@ -1,0 +1,856 @@
+{
+  "queries": [
+    {
+      "id": "q1",
+      "text": "course registration is full",
+      "domain": "education"
+    },
+    {
+      "id": "q2",
+      "text": "student turned in work after deadline",
+      "domain": "education"
+    },
+    {
+      "id": "q3",
+      "text": "bank reversed the card charge",
+      "domain": "finance"
+    },
+    {
+      "id": "q4",
+      "text": "secret key was accidentally exposed",
+      "domain": "cloud"
+    },
+    {
+      "id": "q5",
+      "text": "production line slowed down",
+      "domain": "manufacturing"
+    },
+    {
+      "id": "q6",
+      "text": "contract cannot be enforced",
+      "domain": "legal"
+    },
+    {
+      "id": "q7",
+      "text": "teacher allowed extra time",
+      "domain": "education"
+    },
+    {
+      "id": "q8",
+      "text": "sensor reading jumped outside limits",
+      "domain": "manufacturing"
+    },
+    {
+      "id": "q9",
+      "text": "warehouse has no units left",
+      "domain": "logistics"
+    },
+    {
+      "id": "q10",
+      "text": "battery is almost empty",
+      "domain": "energy"
+    }
+  ],
+  "corpus": [
+    {
+      "id": "p-001",
+      "text": "instructor updated the seating chart"
+    },
+    {
+      "id": "p-002",
+      "text": "respiratory note says the patient was extubated"
+    },
+    {
+      "id": "p-003",
+      "text": "instructor denied an extension"
+    },
+    {
+      "id": "p-004",
+      "text": "replica caught up with primary"
+    },
+    {
+      "id": "p-005",
+      "text": "application contained material misrepresentation"
+    },
+    {
+      "id": "p-006",
+      "text": "routine insurance note was reviewed without a decision"
+    },
+    {
+      "id": "p-007",
+      "text": "routine manufacturing note was reviewed without a decision"
+    },
+    {
+      "id": "p-008",
+      "text": "class meets on the third floor"
+    },
+    {
+      "id": "p-009",
+      "text": "account returned to good standing"
+    },
+    {
+      "id": "p-010",
+      "text": "credential rotation completed safely"
+    },
+    {
+      "id": "p-011",
+      "text": "lot was approved by QA"
+    },
+    {
+      "id": "p-012",
+      "text": "court granted a continuance"
+    },
+    {
+      "id": "p-013",
+      "text": "agreement is void and unenforceable"
+    },
+    {
+      "id": "p-014",
+      "text": "shipment lacked clearance documentation"
+    },
+    {
+      "id": "p-015",
+      "text": "account statement changed font size"
+    },
+    {
+      "id": "p-016",
+      "text": "throughput report used a pie chart"
+    },
+    {
+      "id": "p-017",
+      "text": "routine legal note was reviewed without a decision"
+    },
+    {
+      "id": "p-018",
+      "text": "lot was rejected by QA"
+    },
+    {
+      "id": "p-019",
+      "text": "appellate panel vacated the ruling"
+    },
+    {
+      "id": "p-020",
+      "text": "portfolio manager joined a webinar"
+    },
+    {
+      "id": "p-021",
+      "text": "routine finance note was reviewed without a decision"
+    },
+    {
+      "id": "p-022",
+      "text": "routine legal note was reviewed without a decision"
+    },
+    {
+      "id": "p-023",
+      "text": "routine insurance note was reviewed without a decision"
+    },
+    {
+      "id": "p-024",
+      "text": "refrigerated chain remained intact"
+    },
+    {
+      "id": "p-025",
+      "text": "loss photo was taken outdoors"
+    },
+    {
+      "id": "p-026",
+      "text": "dispatcher kept the original route"
+    },
+    {
+      "id": "p-027",
+      "text": "firm faces a liquidity crunch"
+    },
+    {
+      "id": "p-028",
+      "text": "autoscaler decreases pod replicas"
+    },
+    {
+      "id": "p-029",
+      "text": "routine medical note was reviewed without a decision"
+    },
+    {
+      "id": "p-030",
+      "text": "pathology describes a benign neoplasm"
+    },
+    {
+      "id": "p-031",
+      "text": "matter was dismissed with prejudice"
+    },
+    {
+      "id": "p-032",
+      "text": "patient asked for parking validation"
+    },
+    {
+      "id": "p-033",
+      "text": "deployment promoted new version"
+    },
+    {
+      "id": "p-034",
+      "text": "account is at churn risk"
+    },
+    {
+      "id": "p-035",
+      "text": "replica name contains a hyphen"
+    },
+    {
+      "id": "p-036",
+      "text": "routine insurance note was reviewed without a decision"
+    },
+    {
+      "id": "p-037",
+      "text": "case required multiple follow ups"
+    },
+    {
+      "id": "p-038",
+      "text": "response used a blue pen"
+    },
+    {
+      "id": "p-039",
+      "text": "routine legal note was reviewed without a decision"
+    },
+    {
+      "id": "p-040",
+      "text": "student changed profile photo"
+    },
+    {
+      "id": "p-041",
+      "text": "throughput dropped below target"
+    },
+    {
+      "id": "p-042",
+      "text": "ticket shows customer satisfaction"
+    },
+    {
+      "id": "p-043",
+      "text": "case was tagged with a green label"
+    },
+    {
+      "id": "p-044",
+      "text": "student lacked prerequisite competency"
+    },
+    {
+      "id": "p-045",
+      "text": "routine legal note was reviewed without a decision"
+    },
+    {
+      "id": "p-046",
+      "text": "matter was remanded for further proceedings"
+    },
+    {
+      "id": "p-047",
+      "text": "routine insurance note was reviewed without a decision"
+    },
+    {
+      "id": "p-048",
+      "text": "refrigerated chain was breached"
+    },
+    {
+      "id": "p-049",
+      "text": "shipment cleared customs"
+    },
+    {
+      "id": "p-050",
+      "text": "ticket shows escalated frustration"
+    },
+    {
+      "id": "p-051",
+      "text": "firm has adequate liquidity"
+    },
+    {
+      "id": "p-052",
+      "text": "firm renovated the lobby"
+    },
+    {
+      "id": "p-053",
+      "text": "chart documents acute renal failure"
+    },
+    {
+      "id": "p-054",
+      "text": "routine logistics note was reviewed without a decision"
+    },
+    {
+      "id": "p-055",
+      "text": "inventory is fully replenished"
+    },
+    {
+      "id": "p-056",
+      "text": "state of charge is critically low"
+    },
+    {
+      "id": "p-057",
+      "text": "credential leakage was detected"
+    },
+    {
+      "id": "p-058",
+      "text": "routine energy note was reviewed without a decision"
+    },
+    {
+      "id": "p-059",
+      "text": "routine manufacturing note was reviewed without a decision"
+    },
+    {
+      "id": "p-060",
+      "text": "matter was indexed under a new docket"
+    },
+    {
+      "id": "p-061",
+      "text": "routine manufacturing note was reviewed without a decision"
+    },
+    {
+      "id": "p-062",
+      "text": "routine cloud note was reviewed without a decision"
+    },
+    {
+      "id": "p-063",
+      "text": "routine support note was reviewed without a decision"
+    },
+    {
+      "id": "p-064",
+      "text": "issuer mailed a replacement card"
+    },
+    {
+      "id": "p-065",
+      "text": "routine medical note was reviewed without a decision"
+    },
+    {
+      "id": "p-066",
+      "text": "routine energy note was reviewed without a decision"
+    },
+    {
+      "id": "p-067",
+      "text": "submission used a PDF filename"
+    },
+    {
+      "id": "p-068",
+      "text": "instance failed liveness probes"
+    },
+    {
+      "id": "p-069",
+      "text": "photovoltaic yield dropped"
+    },
+    {
+      "id": "p-070",
+      "text": "routine education note was reviewed without a decision"
+    },
+    {
+      "id": "p-071",
+      "text": "routine education note was reviewed without a decision"
+    },
+    {
+      "id": "p-072",
+      "text": "telemetry stayed within specification"
+    },
+    {
+      "id": "p-073",
+      "text": "routine support note was reviewed without a decision"
+    },
+    {
+      "id": "p-074",
+      "text": "autoscaler increases pod replicas"
+    },
+    {
+      "id": "p-075",
+      "text": "equipment triggered thermal shutdown"
+    },
+    {
+      "id": "p-076",
+      "text": "generation exceeded load"
+    },
+    {
+      "id": "p-077",
+      "text": "loss predates policy inception"
+    },
+    {
+      "id": "p-078",
+      "text": "routine manufacturing note was reviewed without a decision"
+    },
+    {
+      "id": "p-079",
+      "text": "coverage lapsed for nonpayment"
+    },
+    {
+      "id": "p-080",
+      "text": "cluster dashboard switched to dark mode"
+    },
+    {
+      "id": "p-081",
+      "text": "report includes a new cover page"
+    },
+    {
+      "id": "p-082",
+      "text": "adverse effect recorded as insomnia"
+    },
+    {
+      "id": "p-083",
+      "text": "student demonstrated prerequisite competency"
+    },
+    {
+      "id": "p-084",
+      "text": "refrigerated truck was painted white"
+    },
+    {
+      "id": "p-085",
+      "text": "routine logistics note was reviewed without a decision"
+    },
+    {
+      "id": "p-086",
+      "text": "court opened a new filing window"
+    },
+    {
+      "id": "p-087",
+      "text": "coverage document used serif type"
+    },
+    {
+      "id": "p-088",
+      "text": "equipment resumed normal temperature"
+    },
+    {
+      "id": "p-089",
+      "text": "routine logistics note was reviewed without a decision"
+    },
+    {
+      "id": "p-090",
+      "text": "routine finance note was reviewed without a decision"
+    },
+    {
+      "id": "p-091",
+      "text": "cafeteria menu lists kidney beans"
+    },
+    {
+      "id": "p-092",
+      "text": "routine finance note was reviewed without a decision"
+    },
+    {
+      "id": "p-093",
+      "text": "preventive maintenance was skipped"
+    },
+    {
+      "id": "p-094",
+      "text": "shipment label printed in landscape mode"
+    },
+    {
+      "id": "p-095",
+      "text": "routine manufacturing note was reviewed without a decision"
+    },
+    {
+      "id": "p-096",
+      "text": "routine logistics note was reviewed without a decision"
+    },
+    {
+      "id": "p-097",
+      "text": "adverse effect recorded as somnolence"
+    },
+    {
+      "id": "p-098",
+      "text": "agent refused a refund"
+    },
+    {
+      "id": "p-099",
+      "text": "lot number ended with seven"
+    },
+    {
+      "id": "p-100",
+      "text": "routine medical note was reviewed without a decision"
+    },
+    {
+      "id": "p-101",
+      "text": "adjuster denied the claim"
+    },
+    {
+      "id": "p-102",
+      "text": "instance passed liveness probes"
+    },
+    {
+      "id": "p-103",
+      "text": "deductible was applied"
+    },
+    {
+      "id": "p-104",
+      "text": "wind unit entered protective shutdown"
+    },
+    {
+      "id": "p-105",
+      "text": "routine cloud note was reviewed without a decision"
+    },
+    {
+      "id": "p-106",
+      "text": "deductible was waived"
+    },
+    {
+      "id": "p-107",
+      "text": "chart documents renal recovery"
+    },
+    {
+      "id": "p-108",
+      "text": "telemetry showed an out-of-spec spike"
+    },
+    {
+      "id": "p-109",
+      "text": "routine support note was reviewed without a decision"
+    },
+    {
+      "id": "p-110",
+      "text": "dispatcher rerouted the delivery"
+    },
+    {
+      "id": "p-111",
+      "text": "instance label changed color"
+    },
+    {
+      "id": "p-112",
+      "text": "routine education note was reviewed without a decision"
+    },
+    {
+      "id": "p-113",
+      "text": "maintenance team ordered coffee"
+    },
+    {
+      "id": "p-114",
+      "text": "state of charge is fully topped up"
+    },
+    {
+      "id": "p-115",
+      "text": "response was flagged for plagiarism"
+    },
+    {
+      "id": "p-116",
+      "text": "submission was on time"
+    },
+    {
+      "id": "p-117",
+      "text": "meter overreported consumption"
+    },
+    {
+      "id": "p-118",
+      "text": "routine energy note was reviewed without a decision"
+    },
+    {
+      "id": "p-119",
+      "text": "counsel preserved the objection"
+    },
+    {
+      "id": "p-120",
+      "text": "portfolio reached a new high watermark"
+    },
+    {
+      "id": "p-121",
+      "text": "deployment notes mention canary birds"
+    },
+    {
+      "id": "p-122",
+      "text": "load exceeded generation capacity"
+    },
+    {
+      "id": "p-123",
+      "text": "routine cloud note was reviewed without a decision"
+    },
+    {
+      "id": "p-124",
+      "text": "clinical note reports hyperglycemia"
+    },
+    {
+      "id": "p-125",
+      "text": "instructor granted an extension"
+    },
+    {
+      "id": "p-126",
+      "text": "wind unit cast a long shadow"
+    },
+    {
+      "id": "p-127",
+      "text": "account owner updated their avatar"
+    },
+    {
+      "id": "p-128",
+      "text": "agreement uses blue ink signatures"
+    },
+    {
+      "id": "p-129",
+      "text": "solar panel frame was aluminum"
+    },
+    {
+      "id": "p-130",
+      "text": "routine energy note was reviewed without a decision"
+    },
+    {
+      "id": "p-131",
+      "text": "deployment rolled back to previous version"
+    },
+    {
+      "id": "p-132",
+      "text": "routine finance note was reviewed without a decision"
+    },
+    {
+      "id": "p-133",
+      "text": "telemetry chart used thin gridlines"
+    },
+    {
+      "id": "p-134",
+      "text": "nurse changed the bed linens"
+    },
+    {
+      "id": "p-135",
+      "text": "issuer processed a chargeback"
+    },
+    {
+      "id": "p-136",
+      "text": "court denied a continuance"
+    },
+    {
+      "id": "p-137",
+      "text": "routine education note was reviewed without a decision"
+    },
+    {
+      "id": "p-138",
+      "text": "issuer approved the charge"
+    },
+    {
+      "id": "p-139",
+      "text": "wind unit returned to service"
+    },
+    {
+      "id": "p-140",
+      "text": "photovoltaic yield increased"
+    },
+    {
+      "id": "p-141",
+      "text": "portfolio suffered a drawdown"
+    },
+    {
+      "id": "p-142",
+      "text": "credential file used Unix newlines"
+    },
+    {
+      "id": "p-143",
+      "text": "throughput exceeded target"
+    },
+    {
+      "id": "p-144",
+      "text": "replica lag exceeded threshold"
+    },
+    {
+      "id": "p-145",
+      "text": "case requires security escalation"
+    },
+    {
+      "id": "p-146",
+      "text": "clinical note reports hypoglycemia"
+    },
+    {
+      "id": "p-147",
+      "text": "shipment was weighed on Tuesday"
+    },
+    {
+      "id": "p-148",
+      "text": "meter display used seven segments"
+    },
+    {
+      "id": "p-149",
+      "text": "routine support note was reviewed without a decision"
+    },
+    {
+      "id": "p-150",
+      "text": "routine education note was reviewed without a decision"
+    },
+    {
+      "id": "p-151",
+      "text": "pathology describes a malignant neoplasm"
+    },
+    {
+      "id": "p-152",
+      "text": "adjuster scanned the claim form"
+    },
+    {
+      "id": "p-153",
+      "text": "class has open seats"
+    },
+    {
+      "id": "p-154",
+      "text": "ticket includes a shipping address"
+    },
+    {
+      "id": "p-155",
+      "text": "case achieved first contact resolution"
+    },
+    {
+      "id": "p-156",
+      "text": "meter underreported consumption"
+    },
+    {
+      "id": "p-157",
+      "text": "grid map used orange markers"
+    },
+    {
+      "id": "p-158",
+      "text": "preventive maintenance was completed"
+    },
+    {
+      "id": "p-159",
+      "text": "routine energy note was reviewed without a decision"
+    },
+    {
+      "id": "p-160",
+      "text": "case includes a screenshot attachment"
+    },
+    {
+      "id": "p-161",
+      "text": "agent offered a refund"
+    },
+    {
+      "id": "p-162",
+      "text": "routine support note was reviewed without a decision"
+    },
+    {
+      "id": "p-163",
+      "text": "account is likely to renew"
+    },
+    {
+      "id": "p-164",
+      "text": "inventory is out of stock"
+    },
+    {
+      "id": "p-165",
+      "text": "equipment manual was spiral bound"
+    },
+    {
+      "id": "p-166",
+      "text": "appellate panel affirmed the ruling"
+    },
+    {
+      "id": "p-167",
+      "text": "report clears revenue recognition"
+    },
+    {
+      "id": "p-168",
+      "text": "application was signed electronically"
+    },
+    {
+      "id": "p-169",
+      "text": "routine medical note was reviewed without a decision"
+    },
+    {
+      "id": "p-170",
+      "text": "battery label included a QR code"
+    },
+    {
+      "id": "p-171",
+      "text": "routine finance note was reviewed without a decision"
+    },
+    {
+      "id": "p-172",
+      "text": "class has reached enrollment capacity"
+    },
+    {
+      "id": "p-173",
+      "text": "routine medical note was reviewed without a decision"
+    },
+    {
+      "id": "p-174",
+      "text": "clerk replaced the courtroom microphone"
+    },
+    {
+      "id": "p-175",
+      "text": "submission was late"
+    },
+    {
+      "id": "p-176",
+      "text": "shipment met its delivery SLA"
+    },
+    {
+      "id": "p-177",
+      "text": "adjuster approved the claim"
+    },
+    {
+      "id": "p-178",
+      "text": "case requires billing escalation"
+    },
+    {
+      "id": "p-179",
+      "text": "coverage renewed after payment"
+    },
+    {
+      "id": "p-180",
+      "text": "counsel waived the objection"
+    },
+    {
+      "id": "p-181",
+      "text": "shipment missed its delivery SLA"
+    },
+    {
+      "id": "p-182",
+      "text": "respiratory note says the patient was intubated"
+    },
+    {
+      "id": "p-183",
+      "text": "loss occurred during active coverage"
+    },
+    {
+      "id": "p-184",
+      "text": "account entered delinquency"
+    },
+    {
+      "id": "p-185",
+      "text": "routine cloud note was reviewed without a decision"
+    },
+    {
+      "id": "p-186",
+      "text": "routine insurance note was reviewed without a decision"
+    },
+    {
+      "id": "p-187",
+      "text": "agent copied the help center URL"
+    },
+    {
+      "id": "p-188",
+      "text": "dispatcher changed the radio volume"
+    },
+    {
+      "id": "p-189",
+      "text": "technician removed a printer cable"
+    },
+    {
+      "id": "p-190",
+      "text": "routine cloud note was reviewed without a decision"
+    },
+    {
+      "id": "p-191",
+      "text": "report flags premature revenue recognition"
+    },
+    {
+      "id": "p-192",
+      "text": "routine legal note was reviewed without a decision"
+    },
+    {
+      "id": "p-193",
+      "text": "counsel printed the trial calendar"
+    },
+    {
+      "id": "p-194",
+      "text": "response was cleared of plagiarism"
+    },
+    {
+      "id": "p-195",
+      "text": "agreement is valid and enforceable"
+    },
+    {
+      "id": "p-196",
+      "text": "inventory sheet used comma separators"
+    },
+    {
+      "id": "p-197",
+      "text": "deductible field appeared on page two"
+    },
+    {
+      "id": "p-198",
+      "text": "application disclosed all material facts"
+    },
+    {
+      "id": "p-199",
+      "text": "routine logistics note was reviewed without a decision"
+    },
+    {
+      "id": "p-200",
+      "text": "pharmacy shelf was reorganized"
+    }
+  ]
+}
