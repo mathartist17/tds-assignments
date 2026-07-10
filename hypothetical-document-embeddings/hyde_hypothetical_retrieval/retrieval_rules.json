@@ -1,0 +1,9 @@
+{
+  "top_k": 5,
+  "category_match_boost": 0.03,
+  "recency_boost": 0.02,
+  "recency_rule": "item.publish_year >= query.min_year",
+  "hyde_vector_rule": "normalize(sum of the 3 hypothetical_answers[].embedding, component-wise)",
+  "final_vector_rule": "normalize(raw_weight * query_embedding + hyde_weight * hyde_vector, component-wise)",
+  "output": "JSON object mapping query_id to an array of top_k item_id strings sorted by final blended score."
+}
