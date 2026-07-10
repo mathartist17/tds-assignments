@@ -1,0 +1,226 @@
+[
+  {
+    "query_id": "LC_Q_001",
+    "text": "Find the late chunk that explains what banyan must do for identity status mapping in latam.",
+    "service": "identity",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_002",
+    "text": "Find the late chunk that explains what banyan must do for fees evidence windows in na.",
+    "service": "fees",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_003",
+    "text": "Find the late chunk that explains what falcon must do for support evidence windows in na.",
+    "service": "support",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 4
+  },
+  {
+    "query_id": "LC_Q_004",
+    "text": "Find the late chunk that explains what argo must do for fees policy exceptions in latam.",
+    "service": "fees",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_005",
+    "text": "Find the late chunk that explains what drona must do for course_catalog status mapping in latam.",
+    "service": "course_catalog",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_006",
+    "text": "Find the late chunk that explains what falcon must do for support audit labels in na.",
+    "service": "support",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_007",
+    "text": "Find the late chunk that explains what drona must do for identity escalation timers in apac.",
+    "service": "identity",
+    "region": "apac",
+    "release": "2026.06",
+    "priority": 5
+  },
+  {
+    "query_id": "LC_Q_008",
+    "text": "Find the late chunk that explains what helios must do for support evidence windows in emea.",
+    "service": "support",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 5
+  },
+  {
+    "query_id": "LC_Q_009",
+    "text": "Find the late chunk that explains what banyan must do for identity escalation timers in latam.",
+    "service": "identity",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 4
+  },
+  {
+    "query_id": "LC_Q_010",
+    "text": "Find the late chunk that explains what ember must do for course_catalog status mapping in na.",
+    "service": "course_catalog",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_011",
+    "text": "Find the late chunk that explains what cedar must do for admissions audit labels in latam.",
+    "service": "admissions",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_012",
+    "text": "Find the late chunk that explains what banyan must do for support audit labels in na.",
+    "service": "support",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_013",
+    "text": "Find the late chunk that explains what cedar must do for admissions evidence windows in latam.",
+    "service": "admissions",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_014",
+    "text": "Find the late chunk that explains what falcon must do for fees evidence windows in na.",
+    "service": "fees",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_015",
+    "text": "Find the late chunk that explains what cedar must do for transcripts retry controls in na.",
+    "service": "transcripts",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_016",
+    "text": "Find the late chunk that explains what helios must do for scholarships escalation timers in latam.",
+    "service": "scholarships",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 4
+  },
+  {
+    "query_id": "LC_Q_017",
+    "text": "Find the late chunk that explains what helios must do for identity status mapping in apac.",
+    "service": "identity",
+    "region": "apac",
+    "release": "2026.06",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_018",
+    "text": "Find the late chunk that explains what falcon must do for admissions audit labels in emea.",
+    "service": "admissions",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_019",
+    "text": "Find the late chunk that explains what drona must do for admissions audit labels in na.",
+    "service": "admissions",
+    "region": "na",
+    "release": "2026.05",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_020",
+    "text": "Find the late chunk that explains what argo must do for fees policy exceptions in latam.",
+    "service": "fees",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 4
+  },
+  {
+    "query_id": "LC_Q_021",
+    "text": "Find the late chunk that explains what drona must do for transcripts retry controls in apac.",
+    "service": "transcripts",
+    "region": "apac",
+    "release": "2026.06",
+    "priority": 5
+  },
+  {
+    "query_id": "LC_Q_022",
+    "text": "Find the late chunk that explains what argo must do for transcripts retry controls in emea.",
+    "service": "transcripts",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_023",
+    "text": "Find the late chunk that explains what helios must do for course_catalog status mapping in latam.",
+    "service": "course_catalog",
+    "region": "latam",
+    "release": "2026.08",
+    "priority": 3
+  },
+  {
+    "query_id": "LC_Q_024",
+    "text": "Find the late chunk that explains what gingko must do for support policy exceptions in apac.",
+    "service": "support",
+    "region": "apac",
+    "release": "2026.06",
+    "priority": 1
+  },
+  {
+    "query_id": "LC_Q_025",
+    "text": "Find the late chunk that explains what banyan must do for admissions audit labels in emea.",
+    "service": "admissions",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 2
+  },
+  {
+    "query_id": "LC_Q_026",
+    "text": "Find the late chunk that explains what gingko must do for course_catalog retry controls in emea.",
+    "service": "course_catalog",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 4
+  },
+  {
+    "query_id": "LC_Q_027",
+    "text": "Find the late chunk that explains what argo must do for identity escalation timers in emea.",
+    "service": "identity",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 5
+  },
+  {
+    "query_id": "LC_Q_028",
+    "text": "Find the late chunk that explains what falcon must do for proctoring policy exceptions in emea.",
+    "service": "proctoring",
+    "region": "emea",
+    "release": "2026.07",
+    "priority": 3
+  }
+]

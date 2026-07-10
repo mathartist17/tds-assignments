@@ -1,0 +1,10 @@
+{
+  "chunk_sentence_count": 4,
+  "chunk_sentence_overlap": 1,
+  "top_k": 4,
+  "bm25_k1": 1.2,
+  "bm25_b": 0.75,
+  "contextual_template": "{title} {region} {release} {heading} {service} {owner} priority-{priority} {chunk_text}",
+  "query_template": "{text} {service} {region} {release} priority-{priority}",
+  "expected_output": "JSON object mapping each query_id to an array of the top_k chunk_id strings, sorted by BM25 score descending."
+}
