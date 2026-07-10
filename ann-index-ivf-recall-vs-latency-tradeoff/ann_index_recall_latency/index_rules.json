@@ -1,0 +1,8 @@
+{
+  "top_k": 5,
+  "assignment_rule": "Assign each item to the centroid with highest cosine similarity (ties broken by lowest centroid_id).",
+  "probe_rule": "Rank all centroids by cosine similarity to the query embedding descending (ties by lowest centroid_id). Take the top `nprobe` centroids for that query.",
+  "candidate_rule": "The candidate set is the union of all items assigned to the probed centroids only.",
+  "search_rule": "Within the candidate set only, rank by cosine similarity to the query descending (ties by item_id ascending). Return top_k.",
+  "output": "JSON object mapping query_id to an array of top_k item_id strings."
+}
