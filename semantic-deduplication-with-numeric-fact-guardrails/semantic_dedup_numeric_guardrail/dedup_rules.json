@@ -1,0 +1,8 @@
+{
+  "similarity_threshold": 0.92,
+  "numeric_tolerance": 50,
+  "numeric_field": "numeric_fact",
+  "merge_rule": "For every pair of documents, merge them into the same dedup group only if cosine(embedding_a, embedding_b) >= similarity_threshold AND abs(numeric_fact_a - numeric_fact_b) <= numeric_tolerance. Take the transitive closure of all merges (union-find).",
+  "canonical_rule": "Within each dedup group, the canonical_id is the lexicographically smallest doc_id in the group.",
+  "output": "JSON object mapping every doc_id to its canonical_id (a doc with no duplicates maps to itself)."
+}
