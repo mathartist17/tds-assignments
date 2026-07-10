@@ -1,0 +1,5357 @@
+[
+  {
+    "query_id": "CA_Q_001",
+    "token_budget": 1826,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_001_001",
+        "token_count": 209,
+        "relevance_score": 0.982
+      },
+      {
+        "chunk_id": "CTX_001_002",
+        "token_count": 199,
+        "relevance_score": 0.1522
+      },
+      {
+        "chunk_id": "CTX_001_003",
+        "token_count": 336,
+        "relevance_score": 0.8242
+      },
+      {
+        "chunk_id": "CTX_001_004",
+        "token_count": 302,
+        "relevance_score": 0.7756
+      },
+      {
+        "chunk_id": "CTX_001_005",
+        "token_count": 250,
+        "relevance_score": 0.4363
+      },
+      {
+        "chunk_id": "CTX_001_006",
+        "token_count": 316,
+        "relevance_score": 0.4262
+      },
+      {
+        "chunk_id": "CTX_001_007",
+        "token_count": 391,
+        "relevance_score": 0.5108
+      },
+      {
+        "chunk_id": "CTX_001_008",
+        "token_count": 242,
+        "relevance_score": 0.4747
+      },
+      {
+        "chunk_id": "CTX_001_009",
+        "token_count": 131,
+        "relevance_score": 0.5319
+      },
+      {
+        "chunk_id": "CTX_001_010",
+        "token_count": 309,
+        "relevance_score": 0.6729
+      },
+      {
+        "chunk_id": "CTX_001_011",
+        "token_count": 384,
+        "relevance_score": 0.7665
+      },
+      {
+        "chunk_id": "CTX_001_012",
+        "token_count": 102,
+        "relevance_score": 0.343
+      },
+      {
+        "chunk_id": "CTX_001_013",
+        "token_count": 144,
+        "relevance_score": 0.3969
+      },
+      {
+        "chunk_id": "CTX_001_014",
+        "token_count": 80,
+        "relevance_score": 0.6902
+      },
+      {
+        "chunk_id": "CTX_001_015",
+        "token_count": 375,
+        "relevance_score": 0.1988
+      },
+      {
+        "chunk_id": "CTX_001_016",
+        "token_count": 365,
+        "relevance_score": 0.2141
+      },
+      {
+        "chunk_id": "CTX_001_017",
+        "token_count": 309,
+        "relevance_score": 0.1312
+      },
+      {
+        "chunk_id": "CTX_001_018",
+        "token_count": 333,
+        "relevance_score": 0.9606
+      },
+      {
+        "chunk_id": "CTX_001_019",
+        "token_count": 255,
+        "relevance_score": 0.7917
+      },
+      {
+        "chunk_id": "CTX_001_020",
+        "token_count": 185,
+        "relevance_score": 0.2385
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_002",
+    "token_budget": 2190,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_002_001",
+        "token_count": 322,
+        "relevance_score": 0.9403
+      },
+      {
+        "chunk_id": "CTX_002_002",
+        "token_count": 196,
+        "relevance_score": 0.3364
+      },
+      {
+        "chunk_id": "CTX_002_003",
+        "token_count": 395,
+        "relevance_score": 0.1944
+      },
+      {
+        "chunk_id": "CTX_002_004",
+        "token_count": 153,
+        "relevance_score": 0.9304
+      },
+      {
+        "chunk_id": "CTX_002_005",
+        "token_count": 330,
+        "relevance_score": 0.1198
+      },
+      {
+        "chunk_id": "CTX_002_006",
+        "token_count": 193,
+        "relevance_score": 0.3546
+      },
+      {
+        "chunk_id": "CTX_002_007",
+        "token_count": 292,
+        "relevance_score": 0.6113
+      },
+      {
+        "chunk_id": "CTX_002_008",
+        "token_count": 331,
+        "relevance_score": 0.6486
+      },
+      {
+        "chunk_id": "CTX_002_009",
+        "token_count": 130,
+        "relevance_score": 0.1215
+      },
+      {
+        "chunk_id": "CTX_002_010",
+        "token_count": 359,
+        "relevance_score": 0.8169
+      },
+      {
+        "chunk_id": "CTX_002_011",
+        "token_count": 383,
+        "relevance_score": 0.2056
+      },
+      {
+        "chunk_id": "CTX_002_012",
+        "token_count": 353,
+        "relevance_score": 0.1268
+      },
+      {
+        "chunk_id": "CTX_002_013",
+        "token_count": 278,
+        "relevance_score": 0.4699
+      },
+      {
+        "chunk_id": "CTX_002_014",
+        "token_count": 297,
+        "relevance_score": 0.1163
+      },
+      {
+        "chunk_id": "CTX_002_015",
+        "token_count": 158,
+        "relevance_score": 0.0984
+      },
+      {
+        "chunk_id": "CTX_002_016",
+        "token_count": 269,
+        "relevance_score": 0.1369
+      },
+      {
+        "chunk_id": "CTX_002_017",
+        "token_count": 201,
+        "relevance_score": 0.8361
+      },
+      {
+        "chunk_id": "CTX_002_018",
+        "token_count": 87,
+        "relevance_score": 0.3382
+      },
+      {
+        "chunk_id": "CTX_002_019",
+        "token_count": 89,
+        "relevance_score": 0.1325
+      },
+      {
+        "chunk_id": "CTX_002_020",
+        "token_count": 193,
+        "relevance_score": 0.1735
+      },
+      {
+        "chunk_id": "CTX_002_021",
+        "token_count": 120,
+        "relevance_score": 0.7669
+      },
+      {
+        "chunk_id": "CTX_002_022",
+        "token_count": 346,
+        "relevance_score": 0.0221
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_003",
+    "token_budget": 2979,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_003_001",
+        "token_count": 332,
+        "relevance_score": 0.0892
+      },
+      {
+        "chunk_id": "CTX_003_002",
+        "token_count": 130,
+        "relevance_score": 0.9845
+      },
+      {
+        "chunk_id": "CTX_003_003",
+        "token_count": 298,
+        "relevance_score": 0.6662
+      },
+      {
+        "chunk_id": "CTX_003_004",
+        "token_count": 170,
+        "relevance_score": 0.3526
+      },
+      {
+        "chunk_id": "CTX_003_005",
+        "token_count": 281,
+        "relevance_score": 0.1706
+      },
+      {
+        "chunk_id": "CTX_003_006",
+        "token_count": 149,
+        "relevance_score": 0.9663
+      },
+      {
+        "chunk_id": "CTX_003_007",
+        "token_count": 111,
+        "relevance_score": 0.1678
+      },
+      {
+        "chunk_id": "CTX_003_008",
+        "token_count": 258,
+        "relevance_score": 0.6776
+      },
+      {
+        "chunk_id": "CTX_003_009",
+        "token_count": 325,
+        "relevance_score": 0.9238
+      },
+      {
+        "chunk_id": "CTX_003_010",
+        "token_count": 136,
+        "relevance_score": 0.1579
+      },
+      {
+        "chunk_id": "CTX_003_011",
+        "token_count": 206,
+        "relevance_score": 0.4171
+      },
+      {
+        "chunk_id": "CTX_003_012",
+        "token_count": 216,
+        "relevance_score": 0.5715
+      },
+      {
+        "chunk_id": "CTX_003_013",
+        "token_count": 321,
+        "relevance_score": 0.3885
+      },
+      {
+        "chunk_id": "CTX_003_014",
+        "token_count": 91,
+        "relevance_score": 0.7737
+      },
+      {
+        "chunk_id": "CTX_003_015",
+        "token_count": 203,
+        "relevance_score": 0.4899
+      },
+      {
+        "chunk_id": "CTX_003_016",
+        "token_count": 162,
+        "relevance_score": 0.0492
+      },
+      {
+        "chunk_id": "CTX_003_017",
+        "token_count": 196,
+        "relevance_score": 0.485
+      },
+      {
+        "chunk_id": "CTX_003_018",
+        "token_count": 397,
+        "relevance_score": 0.0318
+      },
+      {
+        "chunk_id": "CTX_003_019",
+        "token_count": 331,
+        "relevance_score": 0.3137
+      },
+      {
+        "chunk_id": "CTX_003_020",
+        "token_count": 239,
+        "relevance_score": 0.6979
+      },
+      {
+        "chunk_id": "CTX_003_021",
+        "token_count": 158,
+        "relevance_score": 0.1887
+      },
+      {
+        "chunk_id": "CTX_003_022",
+        "token_count": 168,
+        "relevance_score": 0.4681
+      },
+      {
+        "chunk_id": "CTX_003_023",
+        "token_count": 130,
+        "relevance_score": 0.1818
+      },
+      {
+        "chunk_id": "CTX_003_024",
+        "token_count": 192,
+        "relevance_score": 0.5152
+      },
+      {
+        "chunk_id": "CTX_003_025",
+        "token_count": 199,
+        "relevance_score": 0.4669
+      },
+      {
+        "chunk_id": "CTX_003_026",
+        "token_count": 316,
+        "relevance_score": 0.6245
+      },
+      {
+        "chunk_id": "CTX_003_027",
+        "token_count": 159,
+        "relevance_score": 0.1235
+      },
+      {
+        "chunk_id": "CTX_003_028",
+        "token_count": 289,
+        "relevance_score": 0.9806
+      },
+      {
+        "chunk_id": "CTX_003_029",
+        "token_count": 163,
+        "relevance_score": 0.7244
+      },
+      {
+        "chunk_id": "CTX_003_030",
+        "token_count": 293,
+        "relevance_score": 0.3128
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_004",
+    "token_budget": 2908,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_004_001",
+        "token_count": 236,
+        "relevance_score": 0.4785
+      },
+      {
+        "chunk_id": "CTX_004_002",
+        "token_count": 155,
+        "relevance_score": 0.3397
+      },
+      {
+        "chunk_id": "CTX_004_003",
+        "token_count": 242,
+        "relevance_score": 0.9538
+      },
+      {
+        "chunk_id": "CTX_004_004",
+        "token_count": 288,
+        "relevance_score": 0.4772
+      },
+      {
+        "chunk_id": "CTX_004_005",
+        "token_count": 258,
+        "relevance_score": 0.9859
+      },
+      {
+        "chunk_id": "CTX_004_006",
+        "token_count": 221,
+        "relevance_score": 0.4076
+      },
+      {
+        "chunk_id": "CTX_004_007",
+        "token_count": 323,
+        "relevance_score": 0.9323
+      },
+      {
+        "chunk_id": "CTX_004_008",
+        "token_count": 397,
+        "relevance_score": 0.4759
+      },
+      {
+        "chunk_id": "CTX_004_009",
+        "token_count": 87,
+        "relevance_score": 0.0294
+      },
+      {
+        "chunk_id": "CTX_004_010",
+        "token_count": 327,
+        "relevance_score": 0.9289
+      },
+      {
+        "chunk_id": "CTX_004_011",
+        "token_count": 213,
+        "relevance_score": 0.3259
+      },
+      {
+        "chunk_id": "CTX_004_012",
+        "token_count": 306,
+        "relevance_score": 0.526
+      },
+      {
+        "chunk_id": "CTX_004_013",
+        "token_count": 282,
+        "relevance_score": 0.2698
+      },
+      {
+        "chunk_id": "CTX_004_014",
+        "token_count": 397,
+        "relevance_score": 0.6107
+      },
+      {
+        "chunk_id": "CTX_004_015",
+        "token_count": 199,
+        "relevance_score": 0.1234
+      },
+      {
+        "chunk_id": "CTX_004_016",
+        "token_count": 257,
+        "relevance_score": 0.9599
+      },
+      {
+        "chunk_id": "CTX_004_017",
+        "token_count": 144,
+        "relevance_score": 0.1057
+      },
+      {
+        "chunk_id": "CTX_004_018",
+        "token_count": 111,
+        "relevance_score": 0.4144
+      },
+      {
+        "chunk_id": "CTX_004_019",
+        "token_count": 96,
+        "relevance_score": 0.632
+      },
+      {
+        "chunk_id": "CTX_004_020",
+        "token_count": 377,
+        "relevance_score": 0.8084
+      },
+      {
+        "chunk_id": "CTX_004_021",
+        "token_count": 302,
+        "relevance_score": 0.7361
+      },
+      {
+        "chunk_id": "CTX_004_022",
+        "token_count": 320,
+        "relevance_score": 0.2057
+      },
+      {
+        "chunk_id": "CTX_004_023",
+        "token_count": 278,
+        "relevance_score": 0.6719
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_005",
+    "token_budget": 3135,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_005_001",
+        "token_count": 221,
+        "relevance_score": 0.7294
+      },
+      {
+        "chunk_id": "CTX_005_002",
+        "token_count": 155,
+        "relevance_score": 0.2703
+      },
+      {
+        "chunk_id": "CTX_005_003",
+        "token_count": 374,
+        "relevance_score": 0.1762
+      },
+      {
+        "chunk_id": "CTX_005_004",
+        "token_count": 348,
+        "relevance_score": 0.6031
+      },
+      {
+        "chunk_id": "CTX_005_005",
+        "token_count": 201,
+        "relevance_score": 0.6806
+      },
+      {
+        "chunk_id": "CTX_005_006",
+        "token_count": 212,
+        "relevance_score": 0.2829
+      },
+      {
+        "chunk_id": "CTX_005_007",
+        "token_count": 232,
+        "relevance_score": 0.8896
+      },
+      {
+        "chunk_id": "CTX_005_008",
+        "token_count": 174,
+        "relevance_score": 0.0884
+      },
+      {
+        "chunk_id": "CTX_005_009",
+        "token_count": 393,
+        "relevance_score": 0.2609
+      },
+      {
+        "chunk_id": "CTX_005_010",
+        "token_count": 99,
+        "relevance_score": 0.0099
+      },
+      {
+        "chunk_id": "CTX_005_011",
+        "token_count": 398,
+        "relevance_score": 0.5396
+      },
+      {
+        "chunk_id": "CTX_005_012",
+        "token_count": 200,
+        "relevance_score": 0.9958
+      },
+      {
+        "chunk_id": "CTX_005_013",
+        "token_count": 225,
+        "relevance_score": 0.3443
+      },
+      {
+        "chunk_id": "CTX_005_014",
+        "token_count": 82,
+        "relevance_score": 0.2147
+      },
+      {
+        "chunk_id": "CTX_005_015",
+        "token_count": 96,
+        "relevance_score": 0.8999
+      },
+      {
+        "chunk_id": "CTX_005_016",
+        "token_count": 223,
+        "relevance_score": 0.8004
+      },
+      {
+        "chunk_id": "CTX_005_017",
+        "token_count": 92,
+        "relevance_score": 0.386
+      },
+      {
+        "chunk_id": "CTX_005_018",
+        "token_count": 358,
+        "relevance_score": 0.948
+      },
+      {
+        "chunk_id": "CTX_005_019",
+        "token_count": 165,
+        "relevance_score": 0.9063
+      },
+      {
+        "chunk_id": "CTX_005_020",
+        "token_count": 331,
+        "relevance_score": 0.2216
+      },
+      {
+        "chunk_id": "CTX_005_021",
+        "token_count": 117,
+        "relevance_score": 0.5761
+      },
+      {
+        "chunk_id": "CTX_005_022",
+        "token_count": 212,
+        "relevance_score": 0.8008
+      },
+      {
+        "chunk_id": "CTX_005_023",
+        "token_count": 258,
+        "relevance_score": 0.481
+      },
+      {
+        "chunk_id": "CTX_005_024",
+        "token_count": 196,
+        "relevance_score": 0.5704
+      },
+      {
+        "chunk_id": "CTX_005_025",
+        "token_count": 95,
+        "relevance_score": 0.5102
+      },
+      {
+        "chunk_id": "CTX_005_026",
+        "token_count": 243,
+        "relevance_score": 0.6777
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_006",
+    "token_budget": 4436,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_006_001",
+        "token_count": 244,
+        "relevance_score": 0.7684
+      },
+      {
+        "chunk_id": "CTX_006_002",
+        "token_count": 341,
+        "relevance_score": 0.7007
+      },
+      {
+        "chunk_id": "CTX_006_003",
+        "token_count": 338,
+        "relevance_score": 0.3266
+      },
+      {
+        "chunk_id": "CTX_006_004",
+        "token_count": 400,
+        "relevance_score": 0.6965
+      },
+      {
+        "chunk_id": "CTX_006_005",
+        "token_count": 366,
+        "relevance_score": 0.6255
+      },
+      {
+        "chunk_id": "CTX_006_006",
+        "token_count": 319,
+        "relevance_score": 0.9494
+      },
+      {
+        "chunk_id": "CTX_006_007",
+        "token_count": 119,
+        "relevance_score": 0.8442
+      },
+      {
+        "chunk_id": "CTX_006_008",
+        "token_count": 342,
+        "relevance_score": 0.1618
+      },
+      {
+        "chunk_id": "CTX_006_009",
+        "token_count": 304,
+        "relevance_score": 0.5357
+      },
+      {
+        "chunk_id": "CTX_006_010",
+        "token_count": 320,
+        "relevance_score": 0.2163
+      },
+      {
+        "chunk_id": "CTX_006_011",
+        "token_count": 274,
+        "relevance_score": 0.76
+      },
+      {
+        "chunk_id": "CTX_006_012",
+        "token_count": 365,
+        "relevance_score": 0.609
+      },
+      {
+        "chunk_id": "CTX_006_013",
+        "token_count": 359,
+        "relevance_score": 0.7293
+      },
+      {
+        "chunk_id": "CTX_006_014",
+        "token_count": 258,
+        "relevance_score": 0.4953
+      },
+      {
+        "chunk_id": "CTX_006_015",
+        "token_count": 80,
+        "relevance_score": 0.9143
+      },
+      {
+        "chunk_id": "CTX_006_016",
+        "token_count": 296,
+        "relevance_score": 0.7288
+      },
+      {
+        "chunk_id": "CTX_006_017",
+        "token_count": 354,
+        "relevance_score": 0.6928
+      },
+      {
+        "chunk_id": "CTX_006_018",
+        "token_count": 187,
+        "relevance_score": 0.579
+      },
+      {
+        "chunk_id": "CTX_006_019",
+        "token_count": 152,
+        "relevance_score": 0.4367
+      },
+      {
+        "chunk_id": "CTX_006_020",
+        "token_count": 169,
+        "relevance_score": 0.899
+      },
+      {
+        "chunk_id": "CTX_006_021",
+        "token_count": 336,
+        "relevance_score": 0.4101
+      },
+      {
+        "chunk_id": "CTX_006_022",
+        "token_count": 189,
+        "relevance_score": 0.2366
+      },
+      {
+        "chunk_id": "CTX_006_023",
+        "token_count": 222,
+        "relevance_score": 0.1251
+      },
+      {
+        "chunk_id": "CTX_006_024",
+        "token_count": 151,
+        "relevance_score": 0.7476
+      },
+      {
+        "chunk_id": "CTX_006_025",
+        "token_count": 333,
+        "relevance_score": 0.4424
+      },
+      {
+        "chunk_id": "CTX_006_026",
+        "token_count": 208,
+        "relevance_score": 0.1339
+      },
+      {
+        "chunk_id": "CTX_006_027",
+        "token_count": 368,
+        "relevance_score": 0.4059
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_007",
+    "token_budget": 3015,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_007_001",
+        "token_count": 329,
+        "relevance_score": 0.4454
+      },
+      {
+        "chunk_id": "CTX_007_002",
+        "token_count": 210,
+        "relevance_score": 0.9435
+      },
+      {
+        "chunk_id": "CTX_007_003",
+        "token_count": 190,
+        "relevance_score": 0.027
+      },
+      {
+        "chunk_id": "CTX_007_004",
+        "token_count": 226,
+        "relevance_score": 0.2427
+      },
+      {
+        "chunk_id": "CTX_007_005",
+        "token_count": 174,
+        "relevance_score": 0.9075
+      },
+      {
+        "chunk_id": "CTX_007_006",
+        "token_count": 328,
+        "relevance_score": 0.4273
+      },
+      {
+        "chunk_id": "CTX_007_007",
+        "token_count": 188,
+        "relevance_score": 0.4983
+      },
+      {
+        "chunk_id": "CTX_007_008",
+        "token_count": 118,
+        "relevance_score": 0.1334
+      },
+      {
+        "chunk_id": "CTX_007_009",
+        "token_count": 203,
+        "relevance_score": 0.2445
+      },
+      {
+        "chunk_id": "CTX_007_010",
+        "token_count": 137,
+        "relevance_score": 0.5575
+      },
+      {
+        "chunk_id": "CTX_007_011",
+        "token_count": 188,
+        "relevance_score": 0.3796
+      },
+      {
+        "chunk_id": "CTX_007_012",
+        "token_count": 373,
+        "relevance_score": 0.6806
+      },
+      {
+        "chunk_id": "CTX_007_013",
+        "token_count": 157,
+        "relevance_score": 0.709
+      },
+      {
+        "chunk_id": "CTX_007_014",
+        "token_count": 208,
+        "relevance_score": 0.8951
+      },
+      {
+        "chunk_id": "CTX_007_015",
+        "token_count": 288,
+        "relevance_score": 0.336
+      },
+      {
+        "chunk_id": "CTX_007_016",
+        "token_count": 197,
+        "relevance_score": 0.7085
+      },
+      {
+        "chunk_id": "CTX_007_017",
+        "token_count": 287,
+        "relevance_score": 0.2091
+      },
+      {
+        "chunk_id": "CTX_007_018",
+        "token_count": 245,
+        "relevance_score": 0.4278
+      },
+      {
+        "chunk_id": "CTX_007_019",
+        "token_count": 229,
+        "relevance_score": 0.9703
+      },
+      {
+        "chunk_id": "CTX_007_020",
+        "token_count": 364,
+        "relevance_score": 0.9865
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_008",
+    "token_budget": 2504,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_008_001",
+        "token_count": 246,
+        "relevance_score": 0.6405
+      },
+      {
+        "chunk_id": "CTX_008_002",
+        "token_count": 334,
+        "relevance_score": 0.9053
+      },
+      {
+        "chunk_id": "CTX_008_003",
+        "token_count": 212,
+        "relevance_score": 0.4944
+      },
+      {
+        "chunk_id": "CTX_008_004",
+        "token_count": 281,
+        "relevance_score": 0.2611
+      },
+      {
+        "chunk_id": "CTX_008_005",
+        "token_count": 237,
+        "relevance_score": 0.069
+      },
+      {
+        "chunk_id": "CTX_008_006",
+        "token_count": 266,
+        "relevance_score": 0.4998
+      },
+      {
+        "chunk_id": "CTX_008_007",
+        "token_count": 189,
+        "relevance_score": 0.6181
+      },
+      {
+        "chunk_id": "CTX_008_008",
+        "token_count": 250,
+        "relevance_score": 0.1538
+      },
+      {
+        "chunk_id": "CTX_008_009",
+        "token_count": 224,
+        "relevance_score": 0.6644
+      },
+      {
+        "chunk_id": "CTX_008_010",
+        "token_count": 196,
+        "relevance_score": 0.0437
+      },
+      {
+        "chunk_id": "CTX_008_011",
+        "token_count": 363,
+        "relevance_score": 0.5366
+      },
+      {
+        "chunk_id": "CTX_008_012",
+        "token_count": 152,
+        "relevance_score": 0.2862
+      },
+      {
+        "chunk_id": "CTX_008_013",
+        "token_count": 187,
+        "relevance_score": 0.9532
+      },
+      {
+        "chunk_id": "CTX_008_014",
+        "token_count": 92,
+        "relevance_score": 0.1352
+      },
+      {
+        "chunk_id": "CTX_008_015",
+        "token_count": 352,
+        "relevance_score": 0.6802
+      },
+      {
+        "chunk_id": "CTX_008_016",
+        "token_count": 252,
+        "relevance_score": 0.6458
+      },
+      {
+        "chunk_id": "CTX_008_017",
+        "token_count": 121,
+        "relevance_score": 0.0487
+      },
+      {
+        "chunk_id": "CTX_008_018",
+        "token_count": 363,
+        "relevance_score": 0.3958
+      },
+      {
+        "chunk_id": "CTX_008_019",
+        "token_count": 123,
+        "relevance_score": 0.1172
+      },
+      {
+        "chunk_id": "CTX_008_020",
+        "token_count": 130,
+        "relevance_score": 0.0774
+      },
+      {
+        "chunk_id": "CTX_008_021",
+        "token_count": 247,
+        "relevance_score": 0.2968
+      },
+      {
+        "chunk_id": "CTX_008_022",
+        "token_count": 370,
+        "relevance_score": 0.4306
+      },
+      {
+        "chunk_id": "CTX_008_023",
+        "token_count": 353,
+        "relevance_score": 0.5054
+      },
+      {
+        "chunk_id": "CTX_008_024",
+        "token_count": 339,
+        "relevance_score": 0.1665
+      },
+      {
+        "chunk_id": "CTX_008_025",
+        "token_count": 298,
+        "relevance_score": 0.9722
+      },
+      {
+        "chunk_id": "CTX_008_026",
+        "token_count": 146,
+        "relevance_score": 0.6446
+      },
+      {
+        "chunk_id": "CTX_008_027",
+        "token_count": 373,
+        "relevance_score": 0.739
+      },
+      {
+        "chunk_id": "CTX_008_028",
+        "token_count": 211,
+        "relevance_score": 0.5779
+      },
+      {
+        "chunk_id": "CTX_008_029",
+        "token_count": 123,
+        "relevance_score": 0.0825
+      },
+      {
+        "chunk_id": "CTX_008_030",
+        "token_count": 124,
+        "relevance_score": 0.5729
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_009",
+    "token_budget": 1946,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_009_001",
+        "token_count": 307,
+        "relevance_score": 0.0576
+      },
+      {
+        "chunk_id": "CTX_009_002",
+        "token_count": 81,
+        "relevance_score": 0.942
+      },
+      {
+        "chunk_id": "CTX_009_003",
+        "token_count": 198,
+        "relevance_score": 0.6795
+      },
+      {
+        "chunk_id": "CTX_009_004",
+        "token_count": 124,
+        "relevance_score": 0.6777
+      },
+      {
+        "chunk_id": "CTX_009_005",
+        "token_count": 204,
+        "relevance_score": 0.7486
+      },
+      {
+        "chunk_id": "CTX_009_006",
+        "token_count": 101,
+        "relevance_score": 0.6312
+      },
+      {
+        "chunk_id": "CTX_009_007",
+        "token_count": 142,
+        "relevance_score": 0.6859
+      },
+      {
+        "chunk_id": "CTX_009_008",
+        "token_count": 122,
+        "relevance_score": 0.496
+      },
+      {
+        "chunk_id": "CTX_009_009",
+        "token_count": 224,
+        "relevance_score": 0.7703
+      },
+      {
+        "chunk_id": "CTX_009_010",
+        "token_count": 333,
+        "relevance_score": 0.2502
+      },
+      {
+        "chunk_id": "CTX_009_011",
+        "token_count": 327,
+        "relevance_score": 0.8893
+      },
+      {
+        "chunk_id": "CTX_009_012",
+        "token_count": 249,
+        "relevance_score": 0.1121
+      },
+      {
+        "chunk_id": "CTX_009_013",
+        "token_count": 178,
+        "relevance_score": 0.9393
+      },
+      {
+        "chunk_id": "CTX_009_014",
+        "token_count": 181,
+        "relevance_score": 0.0225
+      },
+      {
+        "chunk_id": "CTX_009_015",
+        "token_count": 314,
+        "relevance_score": 0.4268
+      },
+      {
+        "chunk_id": "CTX_009_016",
+        "token_count": 268,
+        "relevance_score": 0.8244
+      },
+      {
+        "chunk_id": "CTX_009_017",
+        "token_count": 343,
+        "relevance_score": 0.1277
+      },
+      {
+        "chunk_id": "CTX_009_018",
+        "token_count": 284,
+        "relevance_score": 0.1564
+      },
+      {
+        "chunk_id": "CTX_009_019",
+        "token_count": 232,
+        "relevance_score": 0.5932
+      },
+      {
+        "chunk_id": "CTX_009_020",
+        "token_count": 88,
+        "relevance_score": 0.7573
+      },
+      {
+        "chunk_id": "CTX_009_021",
+        "token_count": 253,
+        "relevance_score": 0.7051
+      },
+      {
+        "chunk_id": "CTX_009_022",
+        "token_count": 312,
+        "relevance_score": 0.7221
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_010",
+    "token_budget": 1869,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_010_001",
+        "token_count": 350,
+        "relevance_score": 0.1569
+      },
+      {
+        "chunk_id": "CTX_010_002",
+        "token_count": 395,
+        "relevance_score": 0.0303
+      },
+      {
+        "chunk_id": "CTX_010_003",
+        "token_count": 384,
+        "relevance_score": 0.7833
+      },
+      {
+        "chunk_id": "CTX_010_004",
+        "token_count": 327,
+        "relevance_score": 0.1482
+      },
+      {
+        "chunk_id": "CTX_010_005",
+        "token_count": 160,
+        "relevance_score": 0.041
+      },
+      {
+        "chunk_id": "CTX_010_006",
+        "token_count": 347,
+        "relevance_score": 0.9902
+      },
+      {
+        "chunk_id": "CTX_010_007",
+        "token_count": 300,
+        "relevance_score": 0.3497
+      },
+      {
+        "chunk_id": "CTX_010_008",
+        "token_count": 381,
+        "relevance_score": 0.6606
+      },
+      {
+        "chunk_id": "CTX_010_009",
+        "token_count": 187,
+        "relevance_score": 0.2626
+      },
+      {
+        "chunk_id": "CTX_010_010",
+        "token_count": 182,
+        "relevance_score": 0.6551
+      },
+      {
+        "chunk_id": "CTX_010_011",
+        "token_count": 162,
+        "relevance_score": 0.9968
+      },
+      {
+        "chunk_id": "CTX_010_012",
+        "token_count": 352,
+        "relevance_score": 0.0367
+      },
+      {
+        "chunk_id": "CTX_010_013",
+        "token_count": 124,
+        "relevance_score": 0.9814
+      },
+      {
+        "chunk_id": "CTX_010_014",
+        "token_count": 123,
+        "relevance_score": 0.6394
+      },
+      {
+        "chunk_id": "CTX_010_015",
+        "token_count": 380,
+        "relevance_score": 0.7594
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_011",
+    "token_budget": 3362,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_011_001",
+        "token_count": 396,
+        "relevance_score": 0.5278
+      },
+      {
+        "chunk_id": "CTX_011_002",
+        "token_count": 357,
+        "relevance_score": 0.9616
+      },
+      {
+        "chunk_id": "CTX_011_003",
+        "token_count": 117,
+        "relevance_score": 0.8533
+      },
+      {
+        "chunk_id": "CTX_011_004",
+        "token_count": 289,
+        "relevance_score": 0.3164
+      },
+      {
+        "chunk_id": "CTX_011_005",
+        "token_count": 122,
+        "relevance_score": 0.5253
+      },
+      {
+        "chunk_id": "CTX_011_006",
+        "token_count": 269,
+        "relevance_score": 0.0535
+      },
+      {
+        "chunk_id": "CTX_011_007",
+        "token_count": 352,
+        "relevance_score": 0.5566
+      },
+      {
+        "chunk_id": "CTX_011_008",
+        "token_count": 189,
+        "relevance_score": 0.0687
+      },
+      {
+        "chunk_id": "CTX_011_009",
+        "token_count": 128,
+        "relevance_score": 0.1388
+      },
+      {
+        "chunk_id": "CTX_011_010",
+        "token_count": 91,
+        "relevance_score": 0.2666
+      },
+      {
+        "chunk_id": "CTX_011_011",
+        "token_count": 92,
+        "relevance_score": 0.2944
+      },
+      {
+        "chunk_id": "CTX_011_012",
+        "token_count": 219,
+        "relevance_score": 0.6176
+      },
+      {
+        "chunk_id": "CTX_011_013",
+        "token_count": 373,
+        "relevance_score": 0.215
+      },
+      {
+        "chunk_id": "CTX_011_014",
+        "token_count": 171,
+        "relevance_score": 0.3263
+      },
+      {
+        "chunk_id": "CTX_011_015",
+        "token_count": 393,
+        "relevance_score": 0.4787
+      },
+      {
+        "chunk_id": "CTX_011_016",
+        "token_count": 251,
+        "relevance_score": 0.2975
+      },
+      {
+        "chunk_id": "CTX_011_017",
+        "token_count": 382,
+        "relevance_score": 0.9211
+      },
+      {
+        "chunk_id": "CTX_011_018",
+        "token_count": 95,
+        "relevance_score": 0.5377
+      },
+      {
+        "chunk_id": "CTX_011_019",
+        "token_count": 361,
+        "relevance_score": 0.1786
+      },
+      {
+        "chunk_id": "CTX_011_020",
+        "token_count": 131,
+        "relevance_score": 0.7285
+      },
+      {
+        "chunk_id": "CTX_011_021",
+        "token_count": 136,
+        "relevance_score": 0.5146
+      },
+      {
+        "chunk_id": "CTX_011_022",
+        "token_count": 178,
+        "relevance_score": 0.337
+      },
+      {
+        "chunk_id": "CTX_011_023",
+        "token_count": 332,
+        "relevance_score": 0.71
+      },
+      {
+        "chunk_id": "CTX_011_024",
+        "token_count": 306,
+        "relevance_score": 0.6044
+      },
+      {
+        "chunk_id": "CTX_011_025",
+        "token_count": 161,
+        "relevance_score": 0.0648
+      },
+      {
+        "chunk_id": "CTX_011_026",
+        "token_count": 102,
+        "relevance_score": 0.0993
+      },
+      {
+        "chunk_id": "CTX_011_027",
+        "token_count": 225,
+        "relevance_score": 0.6361
+      },
+      {
+        "chunk_id": "CTX_011_028",
+        "token_count": 364,
+        "relevance_score": 0.6478
+      },
+      {
+        "chunk_id": "CTX_011_029",
+        "token_count": 141,
+        "relevance_score": 0.2182
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_012",
+    "token_budget": 2712,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_012_001",
+        "token_count": 305,
+        "relevance_score": 0.3959
+      },
+      {
+        "chunk_id": "CTX_012_002",
+        "token_count": 220,
+        "relevance_score": 0.9437
+      },
+      {
+        "chunk_id": "CTX_012_003",
+        "token_count": 260,
+        "relevance_score": 0.708
+      },
+      {
+        "chunk_id": "CTX_012_004",
+        "token_count": 262,
+        "relevance_score": 0.6118
+      },
+      {
+        "chunk_id": "CTX_012_005",
+        "token_count": 395,
+        "relevance_score": 0.6837
+      },
+      {
+        "chunk_id": "CTX_012_006",
+        "token_count": 343,
+        "relevance_score": 0.2097
+      },
+      {
+        "chunk_id": "CTX_012_007",
+        "token_count": 289,
+        "relevance_score": 0.4472
+      },
+      {
+        "chunk_id": "CTX_012_008",
+        "token_count": 105,
+        "relevance_score": 0.1573
+      },
+      {
+        "chunk_id": "CTX_012_009",
+        "token_count": 108,
+        "relevance_score": 0.5614
+      },
+      {
+        "chunk_id": "CTX_012_010",
+        "token_count": 107,
+        "relevance_score": 0.0817
+      },
+      {
+        "chunk_id": "CTX_012_011",
+        "token_count": 132,
+        "relevance_score": 0.7757
+      },
+      {
+        "chunk_id": "CTX_012_012",
+        "token_count": 101,
+        "relevance_score": 0.534
+      },
+      {
+        "chunk_id": "CTX_012_013",
+        "token_count": 144,
+        "relevance_score": 0.0497
+      },
+      {
+        "chunk_id": "CTX_012_014",
+        "token_count": 198,
+        "relevance_score": 0.8078
+      },
+      {
+        "chunk_id": "CTX_012_015",
+        "token_count": 365,
+        "relevance_score": 0.4955
+      },
+      {
+        "chunk_id": "CTX_012_016",
+        "token_count": 283,
+        "relevance_score": 0.3868
+      },
+      {
+        "chunk_id": "CTX_012_017",
+        "token_count": 339,
+        "relevance_score": 0.4801
+      },
+      {
+        "chunk_id": "CTX_012_018",
+        "token_count": 262,
+        "relevance_score": 0.6282
+      },
+      {
+        "chunk_id": "CTX_012_019",
+        "token_count": 316,
+        "relevance_score": 0.0335
+      },
+      {
+        "chunk_id": "CTX_012_020",
+        "token_count": 396,
+        "relevance_score": 0.6749
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_013",
+    "token_budget": 3605,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_013_001",
+        "token_count": 301,
+        "relevance_score": 0.3693
+      },
+      {
+        "chunk_id": "CTX_013_002",
+        "token_count": 165,
+        "relevance_score": 0.2248
+      },
+      {
+        "chunk_id": "CTX_013_003",
+        "token_count": 194,
+        "relevance_score": 0.9276
+      },
+      {
+        "chunk_id": "CTX_013_004",
+        "token_count": 358,
+        "relevance_score": 0.056
+      },
+      {
+        "chunk_id": "CTX_013_005",
+        "token_count": 112,
+        "relevance_score": 0.8723
+      },
+      {
+        "chunk_id": "CTX_013_006",
+        "token_count": 241,
+        "relevance_score": 0.841
+      },
+      {
+        "chunk_id": "CTX_013_007",
+        "token_count": 320,
+        "relevance_score": 0.0615
+      },
+      {
+        "chunk_id": "CTX_013_008",
+        "token_count": 263,
+        "relevance_score": 0.1548
+      },
+      {
+        "chunk_id": "CTX_013_009",
+        "token_count": 276,
+        "relevance_score": 0.4778
+      },
+      {
+        "chunk_id": "CTX_013_010",
+        "token_count": 281,
+        "relevance_score": 0.5172
+      },
+      {
+        "chunk_id": "CTX_013_011",
+        "token_count": 124,
+        "relevance_score": 0.8093
+      },
+      {
+        "chunk_id": "CTX_013_012",
+        "token_count": 394,
+        "relevance_score": 0.7005
+      },
+      {
+        "chunk_id": "CTX_013_013",
+        "token_count": 257,
+        "relevance_score": 0.6843
+      },
+      {
+        "chunk_id": "CTX_013_014",
+        "token_count": 222,
+        "relevance_score": 0.978
+      },
+      {
+        "chunk_id": "CTX_013_015",
+        "token_count": 294,
+        "relevance_score": 0.8652
+      },
+      {
+        "chunk_id": "CTX_013_016",
+        "token_count": 307,
+        "relevance_score": 0.694
+      },
+      {
+        "chunk_id": "CTX_013_017",
+        "token_count": 345,
+        "relevance_score": 0.0883
+      },
+      {
+        "chunk_id": "CTX_013_018",
+        "token_count": 172,
+        "relevance_score": 0.3268
+      },
+      {
+        "chunk_id": "CTX_013_019",
+        "token_count": 366,
+        "relevance_score": 0.2803
+      },
+      {
+        "chunk_id": "CTX_013_020",
+        "token_count": 98,
+        "relevance_score": 0.9643
+      },
+      {
+        "chunk_id": "CTX_013_021",
+        "token_count": 157,
+        "relevance_score": 0.4326
+      },
+      {
+        "chunk_id": "CTX_013_022",
+        "token_count": 116,
+        "relevance_score": 0.0633
+      },
+      {
+        "chunk_id": "CTX_013_023",
+        "token_count": 310,
+        "relevance_score": 0.7338
+      },
+      {
+        "chunk_id": "CTX_013_024",
+        "token_count": 84,
+        "relevance_score": 0.0901
+      },
+      {
+        "chunk_id": "CTX_013_025",
+        "token_count": 251,
+        "relevance_score": 0.234
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_014",
+    "token_budget": 2961,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_014_001",
+        "token_count": 325,
+        "relevance_score": 0.961
+      },
+      {
+        "chunk_id": "CTX_014_002",
+        "token_count": 354,
+        "relevance_score": 0.7965
+      },
+      {
+        "chunk_id": "CTX_014_003",
+        "token_count": 299,
+        "relevance_score": 0.6493
+      },
+      {
+        "chunk_id": "CTX_014_004",
+        "token_count": 285,
+        "relevance_score": 0.4899
+      },
+      {
+        "chunk_id": "CTX_014_005",
+        "token_count": 388,
+        "relevance_score": 0.6219
+      },
+      {
+        "chunk_id": "CTX_014_006",
+        "token_count": 131,
+        "relevance_score": 0.6952
+      },
+      {
+        "chunk_id": "CTX_014_007",
+        "token_count": 371,
+        "relevance_score": 0.9529
+      },
+      {
+        "chunk_id": "CTX_014_008",
+        "token_count": 329,
+        "relevance_score": 0.6757
+      },
+      {
+        "chunk_id": "CTX_014_009",
+        "token_count": 213,
+        "relevance_score": 0.8732
+      },
+      {
+        "chunk_id": "CTX_014_010",
+        "token_count": 155,
+        "relevance_score": 0.1928
+      },
+      {
+        "chunk_id": "CTX_014_011",
+        "token_count": 320,
+        "relevance_score": 0.9968
+      },
+      {
+        "chunk_id": "CTX_014_012",
+        "token_count": 326,
+        "relevance_score": 0.3977
+      },
+      {
+        "chunk_id": "CTX_014_013",
+        "token_count": 329,
+        "relevance_score": 0.6537
+      },
+      {
+        "chunk_id": "CTX_014_014",
+        "token_count": 134,
+        "relevance_score": 0.5973
+      },
+      {
+        "chunk_id": "CTX_014_015",
+        "token_count": 323,
+        "relevance_score": 0.988
+      },
+      {
+        "chunk_id": "CTX_014_016",
+        "token_count": 154,
+        "relevance_score": 0.8981
+      },
+      {
+        "chunk_id": "CTX_014_017",
+        "token_count": 119,
+        "relevance_score": 0.5244
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_015",
+    "token_budget": 2000,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_015_001",
+        "token_count": 273,
+        "relevance_score": 0.3422
+      },
+      {
+        "chunk_id": "CTX_015_002",
+        "token_count": 300,
+        "relevance_score": 0.4774
+      },
+      {
+        "chunk_id": "CTX_015_003",
+        "token_count": 305,
+        "relevance_score": 0.381
+      },
+      {
+        "chunk_id": "CTX_015_004",
+        "token_count": 302,
+        "relevance_score": 0.0025
+      },
+      {
+        "chunk_id": "CTX_015_005",
+        "token_count": 210,
+        "relevance_score": 0.7421
+      },
+      {
+        "chunk_id": "CTX_015_006",
+        "token_count": 347,
+        "relevance_score": 0.7736
+      },
+      {
+        "chunk_id": "CTX_015_007",
+        "token_count": 126,
+        "relevance_score": 0.3052
+      },
+      {
+        "chunk_id": "CTX_015_008",
+        "token_count": 361,
+        "relevance_score": 0.4245
+      },
+      {
+        "chunk_id": "CTX_015_009",
+        "token_count": 234,
+        "relevance_score": 0.2392
+      },
+      {
+        "chunk_id": "CTX_015_010",
+        "token_count": 320,
+        "relevance_score": 0.7439
+      },
+      {
+        "chunk_id": "CTX_015_011",
+        "token_count": 263,
+        "relevance_score": 0.7317
+      },
+      {
+        "chunk_id": "CTX_015_012",
+        "token_count": 158,
+        "relevance_score": 0.5968
+      },
+      {
+        "chunk_id": "CTX_015_013",
+        "token_count": 302,
+        "relevance_score": 0.7983
+      },
+      {
+        "chunk_id": "CTX_015_014",
+        "token_count": 317,
+        "relevance_score": 0.489
+      },
+      {
+        "chunk_id": "CTX_015_015",
+        "token_count": 395,
+        "relevance_score": 0.3474
+      },
+      {
+        "chunk_id": "CTX_015_016",
+        "token_count": 291,
+        "relevance_score": 0.2929
+      },
+      {
+        "chunk_id": "CTX_015_017",
+        "token_count": 169,
+        "relevance_score": 0.3984
+      },
+      {
+        "chunk_id": "CTX_015_018",
+        "token_count": 384,
+        "relevance_score": 0.0206
+      },
+      {
+        "chunk_id": "CTX_015_019",
+        "token_count": 187,
+        "relevance_score": 0.0572
+      },
+      {
+        "chunk_id": "CTX_015_020",
+        "token_count": 283,
+        "relevance_score": 0.1785
+      },
+      {
+        "chunk_id": "CTX_015_021",
+        "token_count": 188,
+        "relevance_score": 0.0811
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_016",
+    "token_budget": 1471,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_016_001",
+        "token_count": 154,
+        "relevance_score": 0.4771
+      },
+      {
+        "chunk_id": "CTX_016_002",
+        "token_count": 91,
+        "relevance_score": 0.198
+      },
+      {
+        "chunk_id": "CTX_016_003",
+        "token_count": 83,
+        "relevance_score": 0.828
+      },
+      {
+        "chunk_id": "CTX_016_004",
+        "token_count": 278,
+        "relevance_score": 0.0857
+      },
+      {
+        "chunk_id": "CTX_016_005",
+        "token_count": 396,
+        "relevance_score": 0.883
+      },
+      {
+        "chunk_id": "CTX_016_006",
+        "token_count": 352,
+        "relevance_score": 0.3186
+      },
+      {
+        "chunk_id": "CTX_016_007",
+        "token_count": 99,
+        "relevance_score": 0.9003
+      },
+      {
+        "chunk_id": "CTX_016_008",
+        "token_count": 189,
+        "relevance_score": 0.8638
+      },
+      {
+        "chunk_id": "CTX_016_009",
+        "token_count": 98,
+        "relevance_score": 0.1673
+      },
+      {
+        "chunk_id": "CTX_016_010",
+        "token_count": 322,
+        "relevance_score": 0.9826
+      },
+      {
+        "chunk_id": "CTX_016_011",
+        "token_count": 335,
+        "relevance_score": 0.5662
+      },
+      {
+        "chunk_id": "CTX_016_012",
+        "token_count": 339,
+        "relevance_score": 0.692
+      },
+      {
+        "chunk_id": "CTX_016_013",
+        "token_count": 104,
+        "relevance_score": 0.484
+      },
+      {
+        "chunk_id": "CTX_016_014",
+        "token_count": 97,
+        "relevance_score": 0.5913
+      },
+      {
+        "chunk_id": "CTX_016_015",
+        "token_count": 308,
+        "relevance_score": 0.3658
+      },
+      {
+        "chunk_id": "CTX_016_016",
+        "token_count": 233,
+        "relevance_score": 0.7017
+      },
+      {
+        "chunk_id": "CTX_016_017",
+        "token_count": 199,
+        "relevance_score": 0.413
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_017",
+    "token_budget": 2493,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_017_001",
+        "token_count": 250,
+        "relevance_score": 0.8541
+      },
+      {
+        "chunk_id": "CTX_017_002",
+        "token_count": 188,
+        "relevance_score": 0.7504
+      },
+      {
+        "chunk_id": "CTX_017_003",
+        "token_count": 397,
+        "relevance_score": 0.6604
+      },
+      {
+        "chunk_id": "CTX_017_004",
+        "token_count": 352,
+        "relevance_score": 0.6785
+      },
+      {
+        "chunk_id": "CTX_017_005",
+        "token_count": 306,
+        "relevance_score": 0.6006
+      },
+      {
+        "chunk_id": "CTX_017_006",
+        "token_count": 359,
+        "relevance_score": 0.2633
+      },
+      {
+        "chunk_id": "CTX_017_007",
+        "token_count": 317,
+        "relevance_score": 0.2708
+      },
+      {
+        "chunk_id": "CTX_017_008",
+        "token_count": 391,
+        "relevance_score": 0.8284
+      },
+      {
+        "chunk_id": "CTX_017_009",
+        "token_count": 120,
+        "relevance_score": 0.4602
+      },
+      {
+        "chunk_id": "CTX_017_010",
+        "token_count": 259,
+        "relevance_score": 0.7613
+      },
+      {
+        "chunk_id": "CTX_017_011",
+        "token_count": 220,
+        "relevance_score": 0.6317
+      },
+      {
+        "chunk_id": "CTX_017_012",
+        "token_count": 105,
+        "relevance_score": 0.7204
+      },
+      {
+        "chunk_id": "CTX_017_013",
+        "token_count": 321,
+        "relevance_score": 0.2208
+      },
+      {
+        "chunk_id": "CTX_017_014",
+        "token_count": 195,
+        "relevance_score": 0.488
+      },
+      {
+        "chunk_id": "CTX_017_015",
+        "token_count": 336,
+        "relevance_score": 0.0107
+      },
+      {
+        "chunk_id": "CTX_017_016",
+        "token_count": 174,
+        "relevance_score": 0.2234
+      },
+      {
+        "chunk_id": "CTX_017_017",
+        "token_count": 178,
+        "relevance_score": 0.2665
+      },
+      {
+        "chunk_id": "CTX_017_018",
+        "token_count": 311,
+        "relevance_score": 0.1626
+      },
+      {
+        "chunk_id": "CTX_017_019",
+        "token_count": 298,
+        "relevance_score": 0.0505
+      },
+      {
+        "chunk_id": "CTX_017_020",
+        "token_count": 237,
+        "relevance_score": 0.0622
+      },
+      {
+        "chunk_id": "CTX_017_021",
+        "token_count": 114,
+        "relevance_score": 0.1134
+      },
+      {
+        "chunk_id": "CTX_017_022",
+        "token_count": 112,
+        "relevance_score": 0.5271
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_018",
+    "token_budget": 3277,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_018_001",
+        "token_count": 389,
+        "relevance_score": 0.9948
+      },
+      {
+        "chunk_id": "CTX_018_002",
+        "token_count": 328,
+        "relevance_score": 0.2098
+      },
+      {
+        "chunk_id": "CTX_018_003",
+        "token_count": 312,
+        "relevance_score": 0.894
+      },
+      {
+        "chunk_id": "CTX_018_004",
+        "token_count": 146,
+        "relevance_score": 0.0555
+      },
+      {
+        "chunk_id": "CTX_018_005",
+        "token_count": 148,
+        "relevance_score": 0.1985
+      },
+      {
+        "chunk_id": "CTX_018_006",
+        "token_count": 120,
+        "relevance_score": 0.6758
+      },
+      {
+        "chunk_id": "CTX_018_007",
+        "token_count": 145,
+        "relevance_score": 0.9508
+      },
+      {
+        "chunk_id": "CTX_018_008",
+        "token_count": 167,
+        "relevance_score": 0.104
+      },
+      {
+        "chunk_id": "CTX_018_009",
+        "token_count": 267,
+        "relevance_score": 0.7278
+      },
+      {
+        "chunk_id": "CTX_018_010",
+        "token_count": 253,
+        "relevance_score": 0.6228
+      },
+      {
+        "chunk_id": "CTX_018_011",
+        "token_count": 243,
+        "relevance_score": 0.4636
+      },
+      {
+        "chunk_id": "CTX_018_012",
+        "token_count": 121,
+        "relevance_score": 0.496
+      },
+      {
+        "chunk_id": "CTX_018_013",
+        "token_count": 278,
+        "relevance_score": 0.5079
+      },
+      {
+        "chunk_id": "CTX_018_014",
+        "token_count": 370,
+        "relevance_score": 0.3902
+      },
+      {
+        "chunk_id": "CTX_018_015",
+        "token_count": 385,
+        "relevance_score": 0.3269
+      },
+      {
+        "chunk_id": "CTX_018_016",
+        "token_count": 163,
+        "relevance_score": 0.4347
+      },
+      {
+        "chunk_id": "CTX_018_017",
+        "token_count": 288,
+        "relevance_score": 0.7828
+      },
+      {
+        "chunk_id": "CTX_018_018",
+        "token_count": 199,
+        "relevance_score": 0.5636
+      },
+      {
+        "chunk_id": "CTX_018_019",
+        "token_count": 303,
+        "relevance_score": 0.071
+      },
+      {
+        "chunk_id": "CTX_018_020",
+        "token_count": 127,
+        "relevance_score": 0.7696
+      },
+      {
+        "chunk_id": "CTX_018_021",
+        "token_count": 310,
+        "relevance_score": 0.4047
+      },
+      {
+        "chunk_id": "CTX_018_022",
+        "token_count": 84,
+        "relevance_score": 0.0518
+      },
+      {
+        "chunk_id": "CTX_018_023",
+        "token_count": 80,
+        "relevance_score": 0.6923
+      },
+      {
+        "chunk_id": "CTX_018_024",
+        "token_count": 186,
+        "relevance_score": 0.3279
+      },
+      {
+        "chunk_id": "CTX_018_025",
+        "token_count": 189,
+        "relevance_score": 0.4931
+      },
+      {
+        "chunk_id": "CTX_018_026",
+        "token_count": 215,
+        "relevance_score": 0.1661
+      },
+      {
+        "chunk_id": "CTX_018_027",
+        "token_count": 382,
+        "relevance_score": 0.2433
+      },
+      {
+        "chunk_id": "CTX_018_028",
+        "token_count": 145,
+        "relevance_score": 0.9859
+      },
+      {
+        "chunk_id": "CTX_018_029",
+        "token_count": 210,
+        "relevance_score": 0.9336
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_019",
+    "token_budget": 2909,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_019_001",
+        "token_count": 116,
+        "relevance_score": 0.5348
+      },
+      {
+        "chunk_id": "CTX_019_002",
+        "token_count": 115,
+        "relevance_score": 0.2847
+      },
+      {
+        "chunk_id": "CTX_019_003",
+        "token_count": 126,
+        "relevance_score": 0.7342
+      },
+      {
+        "chunk_id": "CTX_019_004",
+        "token_count": 205,
+        "relevance_score": 0.5469
+      },
+      {
+        "chunk_id": "CTX_019_005",
+        "token_count": 271,
+        "relevance_score": 0.9052
+      },
+      {
+        "chunk_id": "CTX_019_006",
+        "token_count": 267,
+        "relevance_score": 0.5339
+      },
+      {
+        "chunk_id": "CTX_019_007",
+        "token_count": 374,
+        "relevance_score": 0.4364
+      },
+      {
+        "chunk_id": "CTX_019_008",
+        "token_count": 299,
+        "relevance_score": 0.4711
+      },
+      {
+        "chunk_id": "CTX_019_009",
+        "token_count": 389,
+        "relevance_score": 0.3064
+      },
+      {
+        "chunk_id": "CTX_019_010",
+        "token_count": 257,
+        "relevance_score": 0.8394
+      },
+      {
+        "chunk_id": "CTX_019_011",
+        "token_count": 130,
+        "relevance_score": 0.2903
+      },
+      {
+        "chunk_id": "CTX_019_012",
+        "token_count": 138,
+        "relevance_score": 0.1103
+      },
+      {
+        "chunk_id": "CTX_019_013",
+        "token_count": 300,
+        "relevance_score": 0.7866
+      },
+      {
+        "chunk_id": "CTX_019_014",
+        "token_count": 134,
+        "relevance_score": 0.0899
+      },
+      {
+        "chunk_id": "CTX_019_015",
+        "token_count": 395,
+        "relevance_score": 0.8327
+      },
+      {
+        "chunk_id": "CTX_019_016",
+        "token_count": 83,
+        "relevance_score": 0.9543
+      },
+      {
+        "chunk_id": "CTX_019_017",
+        "token_count": 203,
+        "relevance_score": 0.0257
+      },
+      {
+        "chunk_id": "CTX_019_018",
+        "token_count": 147,
+        "relevance_score": 0.7254
+      },
+      {
+        "chunk_id": "CTX_019_019",
+        "token_count": 134,
+        "relevance_score": 0.5176
+      },
+      {
+        "chunk_id": "CTX_019_020",
+        "token_count": 281,
+        "relevance_score": 0.0687
+      },
+      {
+        "chunk_id": "CTX_019_021",
+        "token_count": 181,
+        "relevance_score": 0.8286
+      },
+      {
+        "chunk_id": "CTX_019_022",
+        "token_count": 368,
+        "relevance_score": 0.8753
+      },
+      {
+        "chunk_id": "CTX_019_023",
+        "token_count": 138,
+        "relevance_score": 0.3191
+      },
+      {
+        "chunk_id": "CTX_019_024",
+        "token_count": 238,
+        "relevance_score": 0.7746
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_020",
+    "token_budget": 3095,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_020_001",
+        "token_count": 341,
+        "relevance_score": 0.8176
+      },
+      {
+        "chunk_id": "CTX_020_002",
+        "token_count": 396,
+        "relevance_score": 0.6004
+      },
+      {
+        "chunk_id": "CTX_020_003",
+        "token_count": 309,
+        "relevance_score": 0.6489
+      },
+      {
+        "chunk_id": "CTX_020_004",
+        "token_count": 374,
+        "relevance_score": 0.0691
+      },
+      {
+        "chunk_id": "CTX_020_005",
+        "token_count": 296,
+        "relevance_score": 0.89
+      },
+      {
+        "chunk_id": "CTX_020_006",
+        "token_count": 85,
+        "relevance_score": 0.1008
+      },
+      {
+        "chunk_id": "CTX_020_007",
+        "token_count": 343,
+        "relevance_score": 0.8698
+      },
+      {
+        "chunk_id": "CTX_020_008",
+        "token_count": 290,
+        "relevance_score": 0.8745
+      },
+      {
+        "chunk_id": "CTX_020_009",
+        "token_count": 269,
+        "relevance_score": 0.9171
+      },
+      {
+        "chunk_id": "CTX_020_010",
+        "token_count": 90,
+        "relevance_score": 0.6128
+      },
+      {
+        "chunk_id": "CTX_020_011",
+        "token_count": 282,
+        "relevance_score": 0.7077
+      },
+      {
+        "chunk_id": "CTX_020_012",
+        "token_count": 367,
+        "relevance_score": 0.4738
+      },
+      {
+        "chunk_id": "CTX_020_013",
+        "token_count": 102,
+        "relevance_score": 0.5114
+      },
+      {
+        "chunk_id": "CTX_020_014",
+        "token_count": 283,
+        "relevance_score": 0.166
+      },
+      {
+        "chunk_id": "CTX_020_015",
+        "token_count": 240,
+        "relevance_score": 0.0968
+      },
+      {
+        "chunk_id": "CTX_020_016",
+        "token_count": 193,
+        "relevance_score": 0.4232
+      },
+      {
+        "chunk_id": "CTX_020_017",
+        "token_count": 103,
+        "relevance_score": 0.9912
+      },
+      {
+        "chunk_id": "CTX_020_018",
+        "token_count": 199,
+        "relevance_score": 0.6681
+      },
+      {
+        "chunk_id": "CTX_020_019",
+        "token_count": 213,
+        "relevance_score": 0.2626
+      },
+      {
+        "chunk_id": "CTX_020_020",
+        "token_count": 384,
+        "relevance_score": 0.1892
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_021",
+    "token_budget": 4332,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_021_001",
+        "token_count": 164,
+        "relevance_score": 0.8589
+      },
+      {
+        "chunk_id": "CTX_021_002",
+        "token_count": 232,
+        "relevance_score": 0.2382
+      },
+      {
+        "chunk_id": "CTX_021_003",
+        "token_count": 161,
+        "relevance_score": 0.4273
+      },
+      {
+        "chunk_id": "CTX_021_004",
+        "token_count": 338,
+        "relevance_score": 0.0207
+      },
+      {
+        "chunk_id": "CTX_021_005",
+        "token_count": 236,
+        "relevance_score": 0.9136
+      },
+      {
+        "chunk_id": "CTX_021_006",
+        "token_count": 352,
+        "relevance_score": 0.529
+      },
+      {
+        "chunk_id": "CTX_021_007",
+        "token_count": 332,
+        "relevance_score": 0.7
+      },
+      {
+        "chunk_id": "CTX_021_008",
+        "token_count": 293,
+        "relevance_score": 0.9474
+      },
+      {
+        "chunk_id": "CTX_021_009",
+        "token_count": 262,
+        "relevance_score": 0.9111
+      },
+      {
+        "chunk_id": "CTX_021_010",
+        "token_count": 342,
+        "relevance_score": 0.3689
+      },
+      {
+        "chunk_id": "CTX_021_011",
+        "token_count": 184,
+        "relevance_score": 0.4234
+      },
+      {
+        "chunk_id": "CTX_021_012",
+        "token_count": 114,
+        "relevance_score": 0.9135
+      },
+      {
+        "chunk_id": "CTX_021_013",
+        "token_count": 261,
+        "relevance_score": 0.5705
+      },
+      {
+        "chunk_id": "CTX_021_014",
+        "token_count": 265,
+        "relevance_score": 0.5075
+      },
+      {
+        "chunk_id": "CTX_021_015",
+        "token_count": 333,
+        "relevance_score": 0.7779
+      },
+      {
+        "chunk_id": "CTX_021_016",
+        "token_count": 262,
+        "relevance_score": 0.9979
+      },
+      {
+        "chunk_id": "CTX_021_017",
+        "token_count": 348,
+        "relevance_score": 0.801
+      },
+      {
+        "chunk_id": "CTX_021_018",
+        "token_count": 264,
+        "relevance_score": 0.1478
+      },
+      {
+        "chunk_id": "CTX_021_019",
+        "token_count": 306,
+        "relevance_score": 0.662
+      },
+      {
+        "chunk_id": "CTX_021_020",
+        "token_count": 251,
+        "relevance_score": 0.1814
+      },
+      {
+        "chunk_id": "CTX_021_021",
+        "token_count": 389,
+        "relevance_score": 0.9183
+      },
+      {
+        "chunk_id": "CTX_021_022",
+        "token_count": 361,
+        "relevance_score": 0.7131
+      },
+      {
+        "chunk_id": "CTX_021_023",
+        "token_count": 281,
+        "relevance_score": 0.7211
+      },
+      {
+        "chunk_id": "CTX_021_024",
+        "token_count": 333,
+        "relevance_score": 0.4755
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_022",
+    "token_budget": 2532,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_022_001",
+        "token_count": 329,
+        "relevance_score": 0.8957
+      },
+      {
+        "chunk_id": "CTX_022_002",
+        "token_count": 357,
+        "relevance_score": 0.4143
+      },
+      {
+        "chunk_id": "CTX_022_003",
+        "token_count": 383,
+        "relevance_score": 0.7938
+      },
+      {
+        "chunk_id": "CTX_022_004",
+        "token_count": 342,
+        "relevance_score": 0.8326
+      },
+      {
+        "chunk_id": "CTX_022_005",
+        "token_count": 339,
+        "relevance_score": 0.2708
+      },
+      {
+        "chunk_id": "CTX_022_006",
+        "token_count": 294,
+        "relevance_score": 0.6022
+      },
+      {
+        "chunk_id": "CTX_022_007",
+        "token_count": 319,
+        "relevance_score": 0.902
+      },
+      {
+        "chunk_id": "CTX_022_008",
+        "token_count": 264,
+        "relevance_score": 0.2694
+      },
+      {
+        "chunk_id": "CTX_022_009",
+        "token_count": 207,
+        "relevance_score": 0.8491
+      },
+      {
+        "chunk_id": "CTX_022_010",
+        "token_count": 275,
+        "relevance_score": 0.1148
+      },
+      {
+        "chunk_id": "CTX_022_011",
+        "token_count": 299,
+        "relevance_score": 0.4197
+      },
+      {
+        "chunk_id": "CTX_022_012",
+        "token_count": 182,
+        "relevance_score": 0.5749
+      },
+      {
+        "chunk_id": "CTX_022_013",
+        "token_count": 385,
+        "relevance_score": 0.5521
+      },
+      {
+        "chunk_id": "CTX_022_014",
+        "token_count": 192,
+        "relevance_score": 0.3468
+      },
+      {
+        "chunk_id": "CTX_022_015",
+        "token_count": 127,
+        "relevance_score": 0.6005
+      },
+      {
+        "chunk_id": "CTX_022_016",
+        "token_count": 230,
+        "relevance_score": 0.9624
+      },
+      {
+        "chunk_id": "CTX_022_017",
+        "token_count": 195,
+        "relevance_score": 0.6686
+      },
+      {
+        "chunk_id": "CTX_022_018",
+        "token_count": 84,
+        "relevance_score": 0.4699
+      },
+      {
+        "chunk_id": "CTX_022_019",
+        "token_count": 220,
+        "relevance_score": 0.996
+      },
+      {
+        "chunk_id": "CTX_022_020",
+        "token_count": 125,
+        "relevance_score": 0.607
+      },
+      {
+        "chunk_id": "CTX_022_021",
+        "token_count": 269,
+        "relevance_score": 0.203
+      },
+      {
+        "chunk_id": "CTX_022_022",
+        "token_count": 322,
+        "relevance_score": 0.2649
+      },
+      {
+        "chunk_id": "CTX_022_023",
+        "token_count": 230,
+        "relevance_score": 0.5679
+      },
+      {
+        "chunk_id": "CTX_022_024",
+        "token_count": 156,
+        "relevance_score": 0.0709
+      },
+      {
+        "chunk_id": "CTX_022_025",
+        "token_count": 384,
+        "relevance_score": 0.2716
+      },
+      {
+        "chunk_id": "CTX_022_026",
+        "token_count": 91,
+        "relevance_score": 0.2788
+      },
+      {
+        "chunk_id": "CTX_022_027",
+        "token_count": 248,
+        "relevance_score": 0.5083
+      },
+      {
+        "chunk_id": "CTX_022_028",
+        "token_count": 231,
+        "relevance_score": 0.0883
+      },
+      {
+        "chunk_id": "CTX_022_029",
+        "token_count": 156,
+        "relevance_score": 0.36
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_023",
+    "token_budget": 1577,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_023_001",
+        "token_count": 102,
+        "relevance_score": 0.565
+      },
+      {
+        "chunk_id": "CTX_023_002",
+        "token_count": 206,
+        "relevance_score": 0.5601
+      },
+      {
+        "chunk_id": "CTX_023_003",
+        "token_count": 220,
+        "relevance_score": 0.5326
+      },
+      {
+        "chunk_id": "CTX_023_004",
+        "token_count": 331,
+        "relevance_score": 0.2381
+      },
+      {
+        "chunk_id": "CTX_023_005",
+        "token_count": 305,
+        "relevance_score": 0.3901
+      },
+      {
+        "chunk_id": "CTX_023_006",
+        "token_count": 189,
+        "relevance_score": 0.1734
+      },
+      {
+        "chunk_id": "CTX_023_007",
+        "token_count": 373,
+        "relevance_score": 0.5485
+      },
+      {
+        "chunk_id": "CTX_023_008",
+        "token_count": 314,
+        "relevance_score": 0.6873
+      },
+      {
+        "chunk_id": "CTX_023_009",
+        "token_count": 289,
+        "relevance_score": 0.4496
+      },
+      {
+        "chunk_id": "CTX_023_010",
+        "token_count": 199,
+        "relevance_score": 0.6114
+      },
+      {
+        "chunk_id": "CTX_023_011",
+        "token_count": 341,
+        "relevance_score": 0.7324
+      },
+      {
+        "chunk_id": "CTX_023_012",
+        "token_count": 232,
+        "relevance_score": 0.5412
+      },
+      {
+        "chunk_id": "CTX_023_013",
+        "token_count": 385,
+        "relevance_score": 0.4913
+      },
+      {
+        "chunk_id": "CTX_023_014",
+        "token_count": 174,
+        "relevance_score": 0.5441
+      },
+      {
+        "chunk_id": "CTX_023_015",
+        "token_count": 283,
+        "relevance_score": 0.1791
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_024",
+    "token_budget": 3075,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_024_001",
+        "token_count": 175,
+        "relevance_score": 0.3523
+      },
+      {
+        "chunk_id": "CTX_024_002",
+        "token_count": 94,
+        "relevance_score": 0.7174
+      },
+      {
+        "chunk_id": "CTX_024_003",
+        "token_count": 260,
+        "relevance_score": 0.0081
+      },
+      {
+        "chunk_id": "CTX_024_004",
+        "token_count": 159,
+        "relevance_score": 0.326
+      },
+      {
+        "chunk_id": "CTX_024_005",
+        "token_count": 315,
+        "relevance_score": 0.7989
+      },
+      {
+        "chunk_id": "CTX_024_006",
+        "token_count": 207,
+        "relevance_score": 0.197
+      },
+      {
+        "chunk_id": "CTX_024_007",
+        "token_count": 303,
+        "relevance_score": 0.0846
+      },
+      {
+        "chunk_id": "CTX_024_008",
+        "token_count": 304,
+        "relevance_score": 0.4053
+      },
+      {
+        "chunk_id": "CTX_024_009",
+        "token_count": 265,
+        "relevance_score": 0.7374
+      },
+      {
+        "chunk_id": "CTX_024_010",
+        "token_count": 156,
+        "relevance_score": 0.5718
+      },
+      {
+        "chunk_id": "CTX_024_011",
+        "token_count": 235,
+        "relevance_score": 0.9316
+      },
+      {
+        "chunk_id": "CTX_024_012",
+        "token_count": 115,
+        "relevance_score": 0.911
+      },
+      {
+        "chunk_id": "CTX_024_013",
+        "token_count": 279,
+        "relevance_score": 0.0634
+      },
+      {
+        "chunk_id": "CTX_024_014",
+        "token_count": 94,
+        "relevance_score": 0.5217
+      },
+      {
+        "chunk_id": "CTX_024_015",
+        "token_count": 378,
+        "relevance_score": 0.8613
+      },
+      {
+        "chunk_id": "CTX_024_016",
+        "token_count": 145,
+        "relevance_score": 0.2846
+      },
+      {
+        "chunk_id": "CTX_024_017",
+        "token_count": 342,
+        "relevance_score": 0.4872
+      },
+      {
+        "chunk_id": "CTX_024_018",
+        "token_count": 254,
+        "relevance_score": 0.6174
+      },
+      {
+        "chunk_id": "CTX_024_019",
+        "token_count": 152,
+        "relevance_score": 0.5464
+      },
+      {
+        "chunk_id": "CTX_024_020",
+        "token_count": 274,
+        "relevance_score": 0.119
+      },
+      {
+        "chunk_id": "CTX_024_021",
+        "token_count": 105,
+        "relevance_score": 0.8277
+      },
+      {
+        "chunk_id": "CTX_024_022",
+        "token_count": 210,
+        "relevance_score": 0.5968
+      },
+      {
+        "chunk_id": "CTX_024_023",
+        "token_count": 396,
+        "relevance_score": 0.0033
+      },
+      {
+        "chunk_id": "CTX_024_024",
+        "token_count": 175,
+        "relevance_score": 0.9337
+      },
+      {
+        "chunk_id": "CTX_024_025",
+        "token_count": 201,
+        "relevance_score": 0.6573
+      },
+      {
+        "chunk_id": "CTX_024_026",
+        "token_count": 290,
+        "relevance_score": 0.0875
+      },
+      {
+        "chunk_id": "CTX_024_027",
+        "token_count": 103,
+        "relevance_score": 0.8347
+      },
+      {
+        "chunk_id": "CTX_024_028",
+        "token_count": 294,
+        "relevance_score": 0.4796
+      },
+      {
+        "chunk_id": "CTX_024_029",
+        "token_count": 302,
+        "relevance_score": 0.7257
+      },
+      {
+        "chunk_id": "CTX_024_030",
+        "token_count": 252,
+        "relevance_score": 0.1361
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_025",
+    "token_budget": 3498,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_025_001",
+        "token_count": 229,
+        "relevance_score": 0.7637
+      },
+      {
+        "chunk_id": "CTX_025_002",
+        "token_count": 313,
+        "relevance_score": 0.7476
+      },
+      {
+        "chunk_id": "CTX_025_003",
+        "token_count": 226,
+        "relevance_score": 0.1594
+      },
+      {
+        "chunk_id": "CTX_025_004",
+        "token_count": 270,
+        "relevance_score": 0.9357
+      },
+      {
+        "chunk_id": "CTX_025_005",
+        "token_count": 97,
+        "relevance_score": 0.7572
+      },
+      {
+        "chunk_id": "CTX_025_006",
+        "token_count": 92,
+        "relevance_score": 0.362
+      },
+      {
+        "chunk_id": "CTX_025_007",
+        "token_count": 186,
+        "relevance_score": 0.7694
+      },
+      {
+        "chunk_id": "CTX_025_008",
+        "token_count": 261,
+        "relevance_score": 0.2411
+      },
+      {
+        "chunk_id": "CTX_025_009",
+        "token_count": 234,
+        "relevance_score": 0.5078
+      },
+      {
+        "chunk_id": "CTX_025_010",
+        "token_count": 355,
+        "relevance_score": 0.3966
+      },
+      {
+        "chunk_id": "CTX_025_011",
+        "token_count": 173,
+        "relevance_score": 0.1769
+      },
+      {
+        "chunk_id": "CTX_025_012",
+        "token_count": 89,
+        "relevance_score": 0.3018
+      },
+      {
+        "chunk_id": "CTX_025_013",
+        "token_count": 371,
+        "relevance_score": 0.5509
+      },
+      {
+        "chunk_id": "CTX_025_014",
+        "token_count": 178,
+        "relevance_score": 0.3797
+      },
+      {
+        "chunk_id": "CTX_025_015",
+        "token_count": 387,
+        "relevance_score": 0.1831
+      },
+      {
+        "chunk_id": "CTX_025_016",
+        "token_count": 376,
+        "relevance_score": 0.6842
+      },
+      {
+        "chunk_id": "CTX_025_017",
+        "token_count": 237,
+        "relevance_score": 0.08
+      },
+      {
+        "chunk_id": "CTX_025_018",
+        "token_count": 360,
+        "relevance_score": 0.0139
+      },
+      {
+        "chunk_id": "CTX_025_019",
+        "token_count": 160,
+        "relevance_score": 0.9175
+      },
+      {
+        "chunk_id": "CTX_025_020",
+        "token_count": 273,
+        "relevance_score": 0.4857
+      },
+      {
+        "chunk_id": "CTX_025_021",
+        "token_count": 356,
+        "relevance_score": 0.8314
+      },
+      {
+        "chunk_id": "CTX_025_022",
+        "token_count": 312,
+        "relevance_score": 0.9849
+      },
+      {
+        "chunk_id": "CTX_025_023",
+        "token_count": 236,
+        "relevance_score": 0.3198
+      },
+      {
+        "chunk_id": "CTX_025_024",
+        "token_count": 268,
+        "relevance_score": 0.0479
+      },
+      {
+        "chunk_id": "CTX_025_025",
+        "token_count": 147,
+        "relevance_score": 0.3782
+      },
+      {
+        "chunk_id": "CTX_025_026",
+        "token_count": 213,
+        "relevance_score": 0.779
+      },
+      {
+        "chunk_id": "CTX_025_027",
+        "token_count": 385,
+        "relevance_score": 0.8192
+      },
+      {
+        "chunk_id": "CTX_025_028",
+        "token_count": 212,
+        "relevance_score": 0.0321
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_026",
+    "token_budget": 3474,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_026_001",
+        "token_count": 125,
+        "relevance_score": 0.2455
+      },
+      {
+        "chunk_id": "CTX_026_002",
+        "token_count": 320,
+        "relevance_score": 0.504
+      },
+      {
+        "chunk_id": "CTX_026_003",
+        "token_count": 153,
+        "relevance_score": 0.8179
+      },
+      {
+        "chunk_id": "CTX_026_004",
+        "token_count": 158,
+        "relevance_score": 0.0165
+      },
+      {
+        "chunk_id": "CTX_026_005",
+        "token_count": 297,
+        "relevance_score": 0.1577
+      },
+      {
+        "chunk_id": "CTX_026_006",
+        "token_count": 223,
+        "relevance_score": 0.0246
+      },
+      {
+        "chunk_id": "CTX_026_007",
+        "token_count": 279,
+        "relevance_score": 0.9281
+      },
+      {
+        "chunk_id": "CTX_026_008",
+        "token_count": 310,
+        "relevance_score": 0.2297
+      },
+      {
+        "chunk_id": "CTX_026_009",
+        "token_count": 388,
+        "relevance_score": 0.0141
+      },
+      {
+        "chunk_id": "CTX_026_010",
+        "token_count": 203,
+        "relevance_score": 0.5567
+      },
+      {
+        "chunk_id": "CTX_026_011",
+        "token_count": 207,
+        "relevance_score": 0.7776
+      },
+      {
+        "chunk_id": "CTX_026_012",
+        "token_count": 288,
+        "relevance_score": 0.9037
+      },
+      {
+        "chunk_id": "CTX_026_013",
+        "token_count": 311,
+        "relevance_score": 0.2115
+      },
+      {
+        "chunk_id": "CTX_026_014",
+        "token_count": 157,
+        "relevance_score": 0.4172
+      },
+      {
+        "chunk_id": "CTX_026_015",
+        "token_count": 390,
+        "relevance_score": 0.5578
+      },
+      {
+        "chunk_id": "CTX_026_016",
+        "token_count": 321,
+        "relevance_score": 0.5578
+      },
+      {
+        "chunk_id": "CTX_026_017",
+        "token_count": 194,
+        "relevance_score": 0.0762
+      },
+      {
+        "chunk_id": "CTX_026_018",
+        "token_count": 221,
+        "relevance_score": 0.2128
+      },
+      {
+        "chunk_id": "CTX_026_019",
+        "token_count": 274,
+        "relevance_score": 0.2127
+      },
+      {
+        "chunk_id": "CTX_026_020",
+        "token_count": 369,
+        "relevance_score": 0.6386
+      },
+      {
+        "chunk_id": "CTX_026_021",
+        "token_count": 347,
+        "relevance_score": 0.4825
+      },
+      {
+        "chunk_id": "CTX_026_022",
+        "token_count": 387,
+        "relevance_score": 0.1788
+      },
+      {
+        "chunk_id": "CTX_026_023",
+        "token_count": 227,
+        "relevance_score": 0.4376
+      },
+      {
+        "chunk_id": "CTX_026_024",
+        "token_count": 168,
+        "relevance_score": 0.6455
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_027",
+    "token_budget": 2215,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_027_001",
+        "token_count": 232,
+        "relevance_score": 0.217
+      },
+      {
+        "chunk_id": "CTX_027_002",
+        "token_count": 199,
+        "relevance_score": 0.5782
+      },
+      {
+        "chunk_id": "CTX_027_003",
+        "token_count": 215,
+        "relevance_score": 0.9648
+      },
+      {
+        "chunk_id": "CTX_027_004",
+        "token_count": 306,
+        "relevance_score": 0.1604
+      },
+      {
+        "chunk_id": "CTX_027_005",
+        "token_count": 274,
+        "relevance_score": 0.2322
+      },
+      {
+        "chunk_id": "CTX_027_006",
+        "token_count": 338,
+        "relevance_score": 0.7767
+      },
+      {
+        "chunk_id": "CTX_027_007",
+        "token_count": 109,
+        "relevance_score": 0.8009
+      },
+      {
+        "chunk_id": "CTX_027_008",
+        "token_count": 292,
+        "relevance_score": 0.279
+      },
+      {
+        "chunk_id": "CTX_027_009",
+        "token_count": 146,
+        "relevance_score": 0.4945
+      },
+      {
+        "chunk_id": "CTX_027_010",
+        "token_count": 249,
+        "relevance_score": 0.5437
+      },
+      {
+        "chunk_id": "CTX_027_011",
+        "token_count": 111,
+        "relevance_score": 0.653
+      },
+      {
+        "chunk_id": "CTX_027_012",
+        "token_count": 313,
+        "relevance_score": 0.6233
+      },
+      {
+        "chunk_id": "CTX_027_013",
+        "token_count": 254,
+        "relevance_score": 0.9464
+      },
+      {
+        "chunk_id": "CTX_027_014",
+        "token_count": 348,
+        "relevance_score": 0.8532
+      },
+      {
+        "chunk_id": "CTX_027_015",
+        "token_count": 306,
+        "relevance_score": 0.2405
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_028",
+    "token_budget": 4105,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_028_001",
+        "token_count": 339,
+        "relevance_score": 0.0465
+      },
+      {
+        "chunk_id": "CTX_028_002",
+        "token_count": 323,
+        "relevance_score": 0.2306
+      },
+      {
+        "chunk_id": "CTX_028_003",
+        "token_count": 155,
+        "relevance_score": 0.3415
+      },
+      {
+        "chunk_id": "CTX_028_004",
+        "token_count": 296,
+        "relevance_score": 0.3231
+      },
+      {
+        "chunk_id": "CTX_028_005",
+        "token_count": 178,
+        "relevance_score": 0.251
+      },
+      {
+        "chunk_id": "CTX_028_006",
+        "token_count": 375,
+        "relevance_score": 0.4066
+      },
+      {
+        "chunk_id": "CTX_028_007",
+        "token_count": 300,
+        "relevance_score": 0.0354
+      },
+      {
+        "chunk_id": "CTX_028_008",
+        "token_count": 102,
+        "relevance_score": 0.247
+      },
+      {
+        "chunk_id": "CTX_028_009",
+        "token_count": 134,
+        "relevance_score": 0.8865
+      },
+      {
+        "chunk_id": "CTX_028_010",
+        "token_count": 146,
+        "relevance_score": 0.6184
+      },
+      {
+        "chunk_id": "CTX_028_011",
+        "token_count": 116,
+        "relevance_score": 0.8759
+      },
+      {
+        "chunk_id": "CTX_028_012",
+        "token_count": 124,
+        "relevance_score": 0.5237
+      },
+      {
+        "chunk_id": "CTX_028_013",
+        "token_count": 101,
+        "relevance_score": 0.5884
+      },
+      {
+        "chunk_id": "CTX_028_014",
+        "token_count": 132,
+        "relevance_score": 0.62
+      },
+      {
+        "chunk_id": "CTX_028_015",
+        "token_count": 247,
+        "relevance_score": 0.8874
+      },
+      {
+        "chunk_id": "CTX_028_016",
+        "token_count": 309,
+        "relevance_score": 0.748
+      },
+      {
+        "chunk_id": "CTX_028_017",
+        "token_count": 301,
+        "relevance_score": 0.2814
+      },
+      {
+        "chunk_id": "CTX_028_018",
+        "token_count": 293,
+        "relevance_score": 0.8163
+      },
+      {
+        "chunk_id": "CTX_028_019",
+        "token_count": 179,
+        "relevance_score": 0.8145
+      },
+      {
+        "chunk_id": "CTX_028_020",
+        "token_count": 215,
+        "relevance_score": 0.0206
+      },
+      {
+        "chunk_id": "CTX_028_021",
+        "token_count": 260,
+        "relevance_score": 0.683
+      },
+      {
+        "chunk_id": "CTX_028_022",
+        "token_count": 188,
+        "relevance_score": 0.7381
+      },
+      {
+        "chunk_id": "CTX_028_023",
+        "token_count": 391,
+        "relevance_score": 0.8623
+      },
+      {
+        "chunk_id": "CTX_028_024",
+        "token_count": 351,
+        "relevance_score": 0.378
+      },
+      {
+        "chunk_id": "CTX_028_025",
+        "token_count": 388,
+        "relevance_score": 0.1826
+      },
+      {
+        "chunk_id": "CTX_028_026",
+        "token_count": 372,
+        "relevance_score": 0.8941
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_029",
+    "token_budget": 2089,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_029_001",
+        "token_count": 141,
+        "relevance_score": 0.7586
+      },
+      {
+        "chunk_id": "CTX_029_002",
+        "token_count": 396,
+        "relevance_score": 0.5337
+      },
+      {
+        "chunk_id": "CTX_029_003",
+        "token_count": 110,
+        "relevance_score": 0.4955
+      },
+      {
+        "chunk_id": "CTX_029_004",
+        "token_count": 227,
+        "relevance_score": 0.5306
+      },
+      {
+        "chunk_id": "CTX_029_005",
+        "token_count": 352,
+        "relevance_score": 0.5402
+      },
+      {
+        "chunk_id": "CTX_029_006",
+        "token_count": 130,
+        "relevance_score": 0.4492
+      },
+      {
+        "chunk_id": "CTX_029_007",
+        "token_count": 343,
+        "relevance_score": 0.8418
+      },
+      {
+        "chunk_id": "CTX_029_008",
+        "token_count": 124,
+        "relevance_score": 0.04
+      },
+      {
+        "chunk_id": "CTX_029_009",
+        "token_count": 258,
+        "relevance_score": 0.0651
+      },
+      {
+        "chunk_id": "CTX_029_010",
+        "token_count": 368,
+        "relevance_score": 0.8688
+      },
+      {
+        "chunk_id": "CTX_029_011",
+        "token_count": 171,
+        "relevance_score": 0.1999
+      },
+      {
+        "chunk_id": "CTX_029_012",
+        "token_count": 83,
+        "relevance_score": 0.9641
+      },
+      {
+        "chunk_id": "CTX_029_013",
+        "token_count": 115,
+        "relevance_score": 0.9578
+      },
+      {
+        "chunk_id": "CTX_029_014",
+        "token_count": 326,
+        "relevance_score": 0.4377
+      },
+      {
+        "chunk_id": "CTX_029_015",
+        "token_count": 332,
+        "relevance_score": 0.4142
+      },
+      {
+        "chunk_id": "CTX_029_016",
+        "token_count": 245,
+        "relevance_score": 0.796
+      },
+      {
+        "chunk_id": "CTX_029_017",
+        "token_count": 281,
+        "relevance_score": 0.3738
+      },
+      {
+        "chunk_id": "CTX_029_018",
+        "token_count": 279,
+        "relevance_score": 0.8365
+      },
+      {
+        "chunk_id": "CTX_029_019",
+        "token_count": 360,
+        "relevance_score": 0.1939
+      },
+      {
+        "chunk_id": "CTX_029_020",
+        "token_count": 343,
+        "relevance_score": 0.4442
+      },
+      {
+        "chunk_id": "CTX_029_021",
+        "token_count": 249,
+        "relevance_score": 0.8458
+      },
+      {
+        "chunk_id": "CTX_029_022",
+        "token_count": 345,
+        "relevance_score": 0.177
+      },
+      {
+        "chunk_id": "CTX_029_023",
+        "token_count": 167,
+        "relevance_score": 0.9799
+      },
+      {
+        "chunk_id": "CTX_029_024",
+        "token_count": 223,
+        "relevance_score": 0.4814
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_030",
+    "token_budget": 1837,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_030_001",
+        "token_count": 167,
+        "relevance_score": 0.6116
+      },
+      {
+        "chunk_id": "CTX_030_002",
+        "token_count": 220,
+        "relevance_score": 0.3614
+      },
+      {
+        "chunk_id": "CTX_030_003",
+        "token_count": 288,
+        "relevance_score": 0.6973
+      },
+      {
+        "chunk_id": "CTX_030_004",
+        "token_count": 190,
+        "relevance_score": 0.5914
+      },
+      {
+        "chunk_id": "CTX_030_005",
+        "token_count": 102,
+        "relevance_score": 0.0725
+      },
+      {
+        "chunk_id": "CTX_030_006",
+        "token_count": 375,
+        "relevance_score": 0.992
+      },
+      {
+        "chunk_id": "CTX_030_007",
+        "token_count": 382,
+        "relevance_score": 0.9047
+      },
+      {
+        "chunk_id": "CTX_030_008",
+        "token_count": 269,
+        "relevance_score": 0.9054
+      },
+      {
+        "chunk_id": "CTX_030_009",
+        "token_count": 381,
+        "relevance_score": 0.2454
+      },
+      {
+        "chunk_id": "CTX_030_010",
+        "token_count": 130,
+        "relevance_score": 0.0721
+      },
+      {
+        "chunk_id": "CTX_030_011",
+        "token_count": 95,
+        "relevance_score": 0.6631
+      },
+      {
+        "chunk_id": "CTX_030_012",
+        "token_count": 327,
+        "relevance_score": 0.2131
+      },
+      {
+        "chunk_id": "CTX_030_013",
+        "token_count": 83,
+        "relevance_score": 0.8632
+      },
+      {
+        "chunk_id": "CTX_030_014",
+        "token_count": 156,
+        "relevance_score": 0.0124
+      },
+      {
+        "chunk_id": "CTX_030_015",
+        "token_count": 219,
+        "relevance_score": 0.6184
+      },
+      {
+        "chunk_id": "CTX_030_016",
+        "token_count": 218,
+        "relevance_score": 0.1829
+      },
+      {
+        "chunk_id": "CTX_030_017",
+        "token_count": 260,
+        "relevance_score": 0.5594
+      },
+      {
+        "chunk_id": "CTX_030_018",
+        "token_count": 232,
+        "relevance_score": 0.3067
+      },
+      {
+        "chunk_id": "CTX_030_019",
+        "token_count": 142,
+        "relevance_score": 0.7859
+      },
+      {
+        "chunk_id": "CTX_030_020",
+        "token_count": 167,
+        "relevance_score": 0.0802
+      },
+      {
+        "chunk_id": "CTX_030_021",
+        "token_count": 190,
+        "relevance_score": 0.7752
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_031",
+    "token_budget": 2026,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_031_001",
+        "token_count": 88,
+        "relevance_score": 0.2749
+      },
+      {
+        "chunk_id": "CTX_031_002",
+        "token_count": 237,
+        "relevance_score": 0.3135
+      },
+      {
+        "chunk_id": "CTX_031_003",
+        "token_count": 172,
+        "relevance_score": 0.4422
+      },
+      {
+        "chunk_id": "CTX_031_004",
+        "token_count": 181,
+        "relevance_score": 0.336
+      },
+      {
+        "chunk_id": "CTX_031_005",
+        "token_count": 132,
+        "relevance_score": 0.6809
+      },
+      {
+        "chunk_id": "CTX_031_006",
+        "token_count": 181,
+        "relevance_score": 0.9385
+      },
+      {
+        "chunk_id": "CTX_031_007",
+        "token_count": 391,
+        "relevance_score": 0.3849
+      },
+      {
+        "chunk_id": "CTX_031_008",
+        "token_count": 110,
+        "relevance_score": 0.4412
+      },
+      {
+        "chunk_id": "CTX_031_009",
+        "token_count": 343,
+        "relevance_score": 0.7732
+      },
+      {
+        "chunk_id": "CTX_031_010",
+        "token_count": 231,
+        "relevance_score": 0.7336
+      },
+      {
+        "chunk_id": "CTX_031_011",
+        "token_count": 332,
+        "relevance_score": 0.8271
+      },
+      {
+        "chunk_id": "CTX_031_012",
+        "token_count": 188,
+        "relevance_score": 0.7401
+      },
+      {
+        "chunk_id": "CTX_031_013",
+        "token_count": 274,
+        "relevance_score": 0.1029
+      },
+      {
+        "chunk_id": "CTX_031_014",
+        "token_count": 385,
+        "relevance_score": 0.3135
+      },
+      {
+        "chunk_id": "CTX_031_015",
+        "token_count": 201,
+        "relevance_score": 0.9164
+      },
+      {
+        "chunk_id": "CTX_031_016",
+        "token_count": 310,
+        "relevance_score": 0.327
+      },
+      {
+        "chunk_id": "CTX_031_017",
+        "token_count": 127,
+        "relevance_score": 0.4839
+      },
+      {
+        "chunk_id": "CTX_031_018",
+        "token_count": 215,
+        "relevance_score": 0.034
+      },
+      {
+        "chunk_id": "CTX_031_019",
+        "token_count": 109,
+        "relevance_score": 0.9747
+      },
+      {
+        "chunk_id": "CTX_031_020",
+        "token_count": 94,
+        "relevance_score": 0.3349
+      },
+      {
+        "chunk_id": "CTX_031_021",
+        "token_count": 201,
+        "relevance_score": 0.6831
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_032",
+    "token_budget": 2761,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_032_001",
+        "token_count": 160,
+        "relevance_score": 0.1469
+      },
+      {
+        "chunk_id": "CTX_032_002",
+        "token_count": 229,
+        "relevance_score": 0.0019
+      },
+      {
+        "chunk_id": "CTX_032_003",
+        "token_count": 385,
+        "relevance_score": 0.7821
+      },
+      {
+        "chunk_id": "CTX_032_004",
+        "token_count": 147,
+        "relevance_score": 0.2809
+      },
+      {
+        "chunk_id": "CTX_032_005",
+        "token_count": 190,
+        "relevance_score": 0.4549
+      },
+      {
+        "chunk_id": "CTX_032_006",
+        "token_count": 157,
+        "relevance_score": 0.0454
+      },
+      {
+        "chunk_id": "CTX_032_007",
+        "token_count": 184,
+        "relevance_score": 0.274
+      },
+      {
+        "chunk_id": "CTX_032_008",
+        "token_count": 254,
+        "relevance_score": 0.1066
+      },
+      {
+        "chunk_id": "CTX_032_009",
+        "token_count": 107,
+        "relevance_score": 0.5609
+      },
+      {
+        "chunk_id": "CTX_032_010",
+        "token_count": 312,
+        "relevance_score": 0.3853
+      },
+      {
+        "chunk_id": "CTX_032_011",
+        "token_count": 325,
+        "relevance_score": 0.2711
+      },
+      {
+        "chunk_id": "CTX_032_012",
+        "token_count": 388,
+        "relevance_score": 0.5853
+      },
+      {
+        "chunk_id": "CTX_032_013",
+        "token_count": 217,
+        "relevance_score": 0.2025
+      },
+      {
+        "chunk_id": "CTX_032_014",
+        "token_count": 147,
+        "relevance_score": 0.3758
+      },
+      {
+        "chunk_id": "CTX_032_015",
+        "token_count": 117,
+        "relevance_score": 0.977
+      },
+      {
+        "chunk_id": "CTX_032_016",
+        "token_count": 240,
+        "relevance_score": 0.5177
+      },
+      {
+        "chunk_id": "CTX_032_017",
+        "token_count": 192,
+        "relevance_score": 0.8706
+      },
+      {
+        "chunk_id": "CTX_032_018",
+        "token_count": 324,
+        "relevance_score": 0.8815
+      },
+      {
+        "chunk_id": "CTX_032_019",
+        "token_count": 201,
+        "relevance_score": 0.9229
+      },
+      {
+        "chunk_id": "CTX_032_020",
+        "token_count": 333,
+        "relevance_score": 0.9391
+      },
+      {
+        "chunk_id": "CTX_032_021",
+        "token_count": 97,
+        "relevance_score": 0.6157
+      },
+      {
+        "chunk_id": "CTX_032_022",
+        "token_count": 89,
+        "relevance_score": 0.432
+      },
+      {
+        "chunk_id": "CTX_032_023",
+        "token_count": 264,
+        "relevance_score": 0.0683
+      },
+      {
+        "chunk_id": "CTX_032_024",
+        "token_count": 144,
+        "relevance_score": 0.2636
+      },
+      {
+        "chunk_id": "CTX_032_025",
+        "token_count": 318,
+        "relevance_score": 0.322
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_033",
+    "token_budget": 2074,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_033_001",
+        "token_count": 261,
+        "relevance_score": 0.9306
+      },
+      {
+        "chunk_id": "CTX_033_002",
+        "token_count": 90,
+        "relevance_score": 0.6426
+      },
+      {
+        "chunk_id": "CTX_033_003",
+        "token_count": 195,
+        "relevance_score": 0.6712
+      },
+      {
+        "chunk_id": "CTX_033_004",
+        "token_count": 313,
+        "relevance_score": 0.3664
+      },
+      {
+        "chunk_id": "CTX_033_005",
+        "token_count": 183,
+        "relevance_score": 0.8467
+      },
+      {
+        "chunk_id": "CTX_033_006",
+        "token_count": 110,
+        "relevance_score": 0.679
+      },
+      {
+        "chunk_id": "CTX_033_007",
+        "token_count": 397,
+        "relevance_score": 0.4732
+      },
+      {
+        "chunk_id": "CTX_033_008",
+        "token_count": 245,
+        "relevance_score": 0.1516
+      },
+      {
+        "chunk_id": "CTX_033_009",
+        "token_count": 241,
+        "relevance_score": 0.5764
+      },
+      {
+        "chunk_id": "CTX_033_010",
+        "token_count": 158,
+        "relevance_score": 0.8352
+      },
+      {
+        "chunk_id": "CTX_033_011",
+        "token_count": 342,
+        "relevance_score": 0.7755
+      },
+      {
+        "chunk_id": "CTX_033_012",
+        "token_count": 200,
+        "relevance_score": 0.8391
+      },
+      {
+        "chunk_id": "CTX_033_013",
+        "token_count": 114,
+        "relevance_score": 0.5793
+      },
+      {
+        "chunk_id": "CTX_033_014",
+        "token_count": 400,
+        "relevance_score": 0.9856
+      },
+      {
+        "chunk_id": "CTX_033_015",
+        "token_count": 154,
+        "relevance_score": 0.528
+      },
+      {
+        "chunk_id": "CTX_033_016",
+        "token_count": 220,
+        "relevance_score": 0.3598
+      },
+      {
+        "chunk_id": "CTX_033_017",
+        "token_count": 148,
+        "relevance_score": 0.6584
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_034",
+    "token_budget": 3214,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_034_001",
+        "token_count": 100,
+        "relevance_score": 0.0433
+      },
+      {
+        "chunk_id": "CTX_034_002",
+        "token_count": 309,
+        "relevance_score": 0.0676
+      },
+      {
+        "chunk_id": "CTX_034_003",
+        "token_count": 139,
+        "relevance_score": 0.8928
+      },
+      {
+        "chunk_id": "CTX_034_004",
+        "token_count": 295,
+        "relevance_score": 0.0832
+      },
+      {
+        "chunk_id": "CTX_034_005",
+        "token_count": 328,
+        "relevance_score": 0.6374
+      },
+      {
+        "chunk_id": "CTX_034_006",
+        "token_count": 374,
+        "relevance_score": 0.3402
+      },
+      {
+        "chunk_id": "CTX_034_007",
+        "token_count": 150,
+        "relevance_score": 0.0929
+      },
+      {
+        "chunk_id": "CTX_034_008",
+        "token_count": 377,
+        "relevance_score": 0.5709
+      },
+      {
+        "chunk_id": "CTX_034_009",
+        "token_count": 316,
+        "relevance_score": 0.2284
+      },
+      {
+        "chunk_id": "CTX_034_010",
+        "token_count": 80,
+        "relevance_score": 0.0219
+      },
+      {
+        "chunk_id": "CTX_034_011",
+        "token_count": 213,
+        "relevance_score": 0.2467
+      },
+      {
+        "chunk_id": "CTX_034_012",
+        "token_count": 176,
+        "relevance_score": 0.1296
+      },
+      {
+        "chunk_id": "CTX_034_013",
+        "token_count": 224,
+        "relevance_score": 0.099
+      },
+      {
+        "chunk_id": "CTX_034_014",
+        "token_count": 260,
+        "relevance_score": 0.6498
+      },
+      {
+        "chunk_id": "CTX_034_015",
+        "token_count": 228,
+        "relevance_score": 0.7775
+      },
+      {
+        "chunk_id": "CTX_034_016",
+        "token_count": 91,
+        "relevance_score": 0.8422
+      },
+      {
+        "chunk_id": "CTX_034_017",
+        "token_count": 347,
+        "relevance_score": 0.0884
+      },
+      {
+        "chunk_id": "CTX_034_018",
+        "token_count": 187,
+        "relevance_score": 0.9034
+      },
+      {
+        "chunk_id": "CTX_034_019",
+        "token_count": 190,
+        "relevance_score": 0.6116
+      },
+      {
+        "chunk_id": "CTX_034_020",
+        "token_count": 157,
+        "relevance_score": 0.9262
+      },
+      {
+        "chunk_id": "CTX_034_021",
+        "token_count": 136,
+        "relevance_score": 0.8013
+      },
+      {
+        "chunk_id": "CTX_034_022",
+        "token_count": 227,
+        "relevance_score": 0.5745
+      },
+      {
+        "chunk_id": "CTX_034_023",
+        "token_count": 153,
+        "relevance_score": 0.6493
+      },
+      {
+        "chunk_id": "CTX_034_024",
+        "token_count": 86,
+        "relevance_score": 0.4966
+      },
+      {
+        "chunk_id": "CTX_034_025",
+        "token_count": 104,
+        "relevance_score": 0.373
+      },
+      {
+        "chunk_id": "CTX_034_026",
+        "token_count": 110,
+        "relevance_score": 0.4683
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_035",
+    "token_budget": 3199,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_035_001",
+        "token_count": 364,
+        "relevance_score": 0.5535
+      },
+      {
+        "chunk_id": "CTX_035_002",
+        "token_count": 240,
+        "relevance_score": 0.3094
+      },
+      {
+        "chunk_id": "CTX_035_003",
+        "token_count": 337,
+        "relevance_score": 0.9171
+      },
+      {
+        "chunk_id": "CTX_035_004",
+        "token_count": 86,
+        "relevance_score": 0.6512
+      },
+      {
+        "chunk_id": "CTX_035_005",
+        "token_count": 222,
+        "relevance_score": 0.5531
+      },
+      {
+        "chunk_id": "CTX_035_006",
+        "token_count": 81,
+        "relevance_score": 0.7534
+      },
+      {
+        "chunk_id": "CTX_035_007",
+        "token_count": 119,
+        "relevance_score": 0.1139
+      },
+      {
+        "chunk_id": "CTX_035_008",
+        "token_count": 284,
+        "relevance_score": 0.2591
+      },
+      {
+        "chunk_id": "CTX_035_009",
+        "token_count": 233,
+        "relevance_score": 0.7299
+      },
+      {
+        "chunk_id": "CTX_035_010",
+        "token_count": 188,
+        "relevance_score": 0.81
+      },
+      {
+        "chunk_id": "CTX_035_011",
+        "token_count": 383,
+        "relevance_score": 0.9454
+      },
+      {
+        "chunk_id": "CTX_035_012",
+        "token_count": 286,
+        "relevance_score": 0.4541
+      },
+      {
+        "chunk_id": "CTX_035_013",
+        "token_count": 342,
+        "relevance_score": 0.9463
+      },
+      {
+        "chunk_id": "CTX_035_014",
+        "token_count": 378,
+        "relevance_score": 0.4074
+      },
+      {
+        "chunk_id": "CTX_035_015",
+        "token_count": 126,
+        "relevance_score": 0.4357
+      },
+      {
+        "chunk_id": "CTX_035_016",
+        "token_count": 246,
+        "relevance_score": 0.6153
+      },
+      {
+        "chunk_id": "CTX_035_017",
+        "token_count": 216,
+        "relevance_score": 0.6964
+      },
+      {
+        "chunk_id": "CTX_035_018",
+        "token_count": 338,
+        "relevance_score": 0.3429
+      },
+      {
+        "chunk_id": "CTX_035_019",
+        "token_count": 134,
+        "relevance_score": 0.3007
+      },
+      {
+        "chunk_id": "CTX_035_020",
+        "token_count": 318,
+        "relevance_score": 0.9405
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_036",
+    "token_budget": 2833,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_036_001",
+        "token_count": 148,
+        "relevance_score": 0.3787
+      },
+      {
+        "chunk_id": "CTX_036_002",
+        "token_count": 309,
+        "relevance_score": 0.9812
+      },
+      {
+        "chunk_id": "CTX_036_003",
+        "token_count": 303,
+        "relevance_score": 0.3861
+      },
+      {
+        "chunk_id": "CTX_036_004",
+        "token_count": 397,
+        "relevance_score": 0.1292
+      },
+      {
+        "chunk_id": "CTX_036_005",
+        "token_count": 376,
+        "relevance_score": 0.1739
+      },
+      {
+        "chunk_id": "CTX_036_006",
+        "token_count": 300,
+        "relevance_score": 0.7828
+      },
+      {
+        "chunk_id": "CTX_036_007",
+        "token_count": 113,
+        "relevance_score": 0.3943
+      },
+      {
+        "chunk_id": "CTX_036_008",
+        "token_count": 386,
+        "relevance_score": 0.1747
+      },
+      {
+        "chunk_id": "CTX_036_009",
+        "token_count": 259,
+        "relevance_score": 0.6347
+      },
+      {
+        "chunk_id": "CTX_036_010",
+        "token_count": 299,
+        "relevance_score": 0.7474
+      },
+      {
+        "chunk_id": "CTX_036_011",
+        "token_count": 232,
+        "relevance_score": 0.5043
+      },
+      {
+        "chunk_id": "CTX_036_012",
+        "token_count": 363,
+        "relevance_score": 0.7668
+      },
+      {
+        "chunk_id": "CTX_036_013",
+        "token_count": 100,
+        "relevance_score": 0.2694
+      },
+      {
+        "chunk_id": "CTX_036_014",
+        "token_count": 253,
+        "relevance_score": 0.7837
+      },
+      {
+        "chunk_id": "CTX_036_015",
+        "token_count": 189,
+        "relevance_score": 0.2834
+      },
+      {
+        "chunk_id": "CTX_036_016",
+        "token_count": 317,
+        "relevance_score": 0.2959
+      },
+      {
+        "chunk_id": "CTX_036_017",
+        "token_count": 285,
+        "relevance_score": 0.3429
+      },
+      {
+        "chunk_id": "CTX_036_018",
+        "token_count": 326,
+        "relevance_score": 0.0103
+      },
+      {
+        "chunk_id": "CTX_036_019",
+        "token_count": 368,
+        "relevance_score": 0.1707
+      },
+      {
+        "chunk_id": "CTX_036_020",
+        "token_count": 323,
+        "relevance_score": 0.408
+      },
+      {
+        "chunk_id": "CTX_036_021",
+        "token_count": 99,
+        "relevance_score": 0.4231
+      },
+      {
+        "chunk_id": "CTX_036_022",
+        "token_count": 302,
+        "relevance_score": 0.4956
+      },
+      {
+        "chunk_id": "CTX_036_023",
+        "token_count": 205,
+        "relevance_score": 0.6408
+      },
+      {
+        "chunk_id": "CTX_036_024",
+        "token_count": 120,
+        "relevance_score": 0.7711
+      },
+      {
+        "chunk_id": "CTX_036_025",
+        "token_count": 352,
+        "relevance_score": 0.2707
+      },
+      {
+        "chunk_id": "CTX_036_026",
+        "token_count": 238,
+        "relevance_score": 0.2292
+      },
+      {
+        "chunk_id": "CTX_036_027",
+        "token_count": 354,
+        "relevance_score": 0.8306
+      },
+      {
+        "chunk_id": "CTX_036_028",
+        "token_count": 91,
+        "relevance_score": 0.6083
+      },
+      {
+        "chunk_id": "CTX_036_029",
+        "token_count": 368,
+        "relevance_score": 0.5353
+      },
+      {
+        "chunk_id": "CTX_036_030",
+        "token_count": 319,
+        "relevance_score": 0.3122
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_037",
+    "token_budget": 1423,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_037_001",
+        "token_count": 174,
+        "relevance_score": 0.5432
+      },
+      {
+        "chunk_id": "CTX_037_002",
+        "token_count": 284,
+        "relevance_score": 0.1804
+      },
+      {
+        "chunk_id": "CTX_037_003",
+        "token_count": 188,
+        "relevance_score": 0.4235
+      },
+      {
+        "chunk_id": "CTX_037_004",
+        "token_count": 217,
+        "relevance_score": 0.0836
+      },
+      {
+        "chunk_id": "CTX_037_005",
+        "token_count": 142,
+        "relevance_score": 0.8491
+      },
+      {
+        "chunk_id": "CTX_037_006",
+        "token_count": 80,
+        "relevance_score": 0.9076
+      },
+      {
+        "chunk_id": "CTX_037_007",
+        "token_count": 128,
+        "relevance_score": 0.1423
+      },
+      {
+        "chunk_id": "CTX_037_008",
+        "token_count": 170,
+        "relevance_score": 0.7696
+      },
+      {
+        "chunk_id": "CTX_037_009",
+        "token_count": 150,
+        "relevance_score": 0.6057
+      },
+      {
+        "chunk_id": "CTX_037_010",
+        "token_count": 338,
+        "relevance_score": 0.8105
+      },
+      {
+        "chunk_id": "CTX_037_011",
+        "token_count": 131,
+        "relevance_score": 0.8737
+      },
+      {
+        "chunk_id": "CTX_037_012",
+        "token_count": 193,
+        "relevance_score": 0.5244
+      },
+      {
+        "chunk_id": "CTX_037_013",
+        "token_count": 131,
+        "relevance_score": 0.4024
+      },
+      {
+        "chunk_id": "CTX_037_014",
+        "token_count": 188,
+        "relevance_score": 0.2414
+      },
+      {
+        "chunk_id": "CTX_037_015",
+        "token_count": 311,
+        "relevance_score": 0.7238
+      },
+      {
+        "chunk_id": "CTX_037_016",
+        "token_count": 235,
+        "relevance_score": 0.0678
+      },
+      {
+        "chunk_id": "CTX_037_017",
+        "token_count": 168,
+        "relevance_score": 0.1617
+      },
+      {
+        "chunk_id": "CTX_037_018",
+        "token_count": 197,
+        "relevance_score": 0.9338
+      },
+      {
+        "chunk_id": "CTX_037_019",
+        "token_count": 133,
+        "relevance_score": 0.7067
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_038",
+    "token_budget": 2228,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_038_001",
+        "token_count": 358,
+        "relevance_score": 0.17
+      },
+      {
+        "chunk_id": "CTX_038_002",
+        "token_count": 207,
+        "relevance_score": 0.1195
+      },
+      {
+        "chunk_id": "CTX_038_003",
+        "token_count": 354,
+        "relevance_score": 0.3463
+      },
+      {
+        "chunk_id": "CTX_038_004",
+        "token_count": 180,
+        "relevance_score": 0.7915
+      },
+      {
+        "chunk_id": "CTX_038_005",
+        "token_count": 309,
+        "relevance_score": 0.334
+      },
+      {
+        "chunk_id": "CTX_038_006",
+        "token_count": 293,
+        "relevance_score": 0.6918
+      },
+      {
+        "chunk_id": "CTX_038_007",
+        "token_count": 314,
+        "relevance_score": 0.4566
+      },
+      {
+        "chunk_id": "CTX_038_008",
+        "token_count": 301,
+        "relevance_score": 0.0416
+      },
+      {
+        "chunk_id": "CTX_038_009",
+        "token_count": 346,
+        "relevance_score": 0.6538
+      },
+      {
+        "chunk_id": "CTX_038_010",
+        "token_count": 267,
+        "relevance_score": 0.6057
+      },
+      {
+        "chunk_id": "CTX_038_011",
+        "token_count": 395,
+        "relevance_score": 0.3307
+      },
+      {
+        "chunk_id": "CTX_038_012",
+        "token_count": 252,
+        "relevance_score": 0.086
+      },
+      {
+        "chunk_id": "CTX_038_013",
+        "token_count": 307,
+        "relevance_score": 0.7005
+      },
+      {
+        "chunk_id": "CTX_038_014",
+        "token_count": 286,
+        "relevance_score": 0.5472
+      },
+      {
+        "chunk_id": "CTX_038_015",
+        "token_count": 257,
+        "relevance_score": 0.6969
+      },
+      {
+        "chunk_id": "CTX_038_016",
+        "token_count": 132,
+        "relevance_score": 0.0286
+      },
+      {
+        "chunk_id": "CTX_038_017",
+        "token_count": 203,
+        "relevance_score": 0.7434
+      },
+      {
+        "chunk_id": "CTX_038_018",
+        "token_count": 189,
+        "relevance_score": 0.6964
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_039",
+    "token_budget": 2429,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_039_001",
+        "token_count": 389,
+        "relevance_score": 0.7165
+      },
+      {
+        "chunk_id": "CTX_039_002",
+        "token_count": 233,
+        "relevance_score": 0.8284
+      },
+      {
+        "chunk_id": "CTX_039_003",
+        "token_count": 199,
+        "relevance_score": 0.7579
+      },
+      {
+        "chunk_id": "CTX_039_004",
+        "token_count": 325,
+        "relevance_score": 0.0159
+      },
+      {
+        "chunk_id": "CTX_039_005",
+        "token_count": 351,
+        "relevance_score": 0.7849
+      },
+      {
+        "chunk_id": "CTX_039_006",
+        "token_count": 245,
+        "relevance_score": 0.6489
+      },
+      {
+        "chunk_id": "CTX_039_007",
+        "token_count": 297,
+        "relevance_score": 0.3497
+      },
+      {
+        "chunk_id": "CTX_039_008",
+        "token_count": 290,
+        "relevance_score": 0.9441
+      },
+      {
+        "chunk_id": "CTX_039_009",
+        "token_count": 197,
+        "relevance_score": 0.3852
+      },
+      {
+        "chunk_id": "CTX_039_010",
+        "token_count": 185,
+        "relevance_score": 0.7216
+      },
+      {
+        "chunk_id": "CTX_039_011",
+        "token_count": 192,
+        "relevance_score": 0.1551
+      },
+      {
+        "chunk_id": "CTX_039_012",
+        "token_count": 293,
+        "relevance_score": 0.012
+      },
+      {
+        "chunk_id": "CTX_039_013",
+        "token_count": 155,
+        "relevance_score": 0.1288
+      },
+      {
+        "chunk_id": "CTX_039_014",
+        "token_count": 377,
+        "relevance_score": 0.1887
+      },
+      {
+        "chunk_id": "CTX_039_015",
+        "token_count": 135,
+        "relevance_score": 0.2979
+      },
+      {
+        "chunk_id": "CTX_039_016",
+        "token_count": 365,
+        "relevance_score": 0.184
+      },
+      {
+        "chunk_id": "CTX_039_017",
+        "token_count": 279,
+        "relevance_score": 0.0679
+      },
+      {
+        "chunk_id": "CTX_039_018",
+        "token_count": 156,
+        "relevance_score": 0.7387
+      },
+      {
+        "chunk_id": "CTX_039_019",
+        "token_count": 194,
+        "relevance_score": 0.922
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_040",
+    "token_budget": 2662,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_040_001",
+        "token_count": 93,
+        "relevance_score": 0.7767
+      },
+      {
+        "chunk_id": "CTX_040_002",
+        "token_count": 281,
+        "relevance_score": 0.8502
+      },
+      {
+        "chunk_id": "CTX_040_003",
+        "token_count": 324,
+        "relevance_score": 0.3008
+      },
+      {
+        "chunk_id": "CTX_040_004",
+        "token_count": 271,
+        "relevance_score": 0.7259
+      },
+      {
+        "chunk_id": "CTX_040_005",
+        "token_count": 391,
+        "relevance_score": 0.4949
+      },
+      {
+        "chunk_id": "CTX_040_006",
+        "token_count": 345,
+        "relevance_score": 0.6782
+      },
+      {
+        "chunk_id": "CTX_040_007",
+        "token_count": 334,
+        "relevance_score": 0.8764
+      },
+      {
+        "chunk_id": "CTX_040_008",
+        "token_count": 296,
+        "relevance_score": 0.3556
+      },
+      {
+        "chunk_id": "CTX_040_009",
+        "token_count": 302,
+        "relevance_score": 0.7071
+      },
+      {
+        "chunk_id": "CTX_040_010",
+        "token_count": 158,
+        "relevance_score": 0.9451
+      },
+      {
+        "chunk_id": "CTX_040_011",
+        "token_count": 189,
+        "relevance_score": 0.0854
+      },
+      {
+        "chunk_id": "CTX_040_012",
+        "token_count": 359,
+        "relevance_score": 0.8507
+      },
+      {
+        "chunk_id": "CTX_040_013",
+        "token_count": 352,
+        "relevance_score": 0.3961
+      },
+      {
+        "chunk_id": "CTX_040_014",
+        "token_count": 125,
+        "relevance_score": 0.7792
+      },
+      {
+        "chunk_id": "CTX_040_015",
+        "token_count": 135,
+        "relevance_score": 0.1999
+      },
+      {
+        "chunk_id": "CTX_040_016",
+        "token_count": 109,
+        "relevance_score": 0.9109
+      },
+      {
+        "chunk_id": "CTX_040_017",
+        "token_count": 91,
+        "relevance_score": 0.6264
+      },
+      {
+        "chunk_id": "CTX_040_018",
+        "token_count": 365,
+        "relevance_score": 0.8377
+      },
+      {
+        "chunk_id": "CTX_040_019",
+        "token_count": 198,
+        "relevance_score": 0.406
+      },
+      {
+        "chunk_id": "CTX_040_020",
+        "token_count": 122,
+        "relevance_score": 0.5117
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_041",
+    "token_budget": 4310,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_041_001",
+        "token_count": 253,
+        "relevance_score": 0.5252
+      },
+      {
+        "chunk_id": "CTX_041_002",
+        "token_count": 144,
+        "relevance_score": 0.1369
+      },
+      {
+        "chunk_id": "CTX_041_003",
+        "token_count": 137,
+        "relevance_score": 0.7843
+      },
+      {
+        "chunk_id": "CTX_041_004",
+        "token_count": 102,
+        "relevance_score": 0.4423
+      },
+      {
+        "chunk_id": "CTX_041_005",
+        "token_count": 244,
+        "relevance_score": 0.5023
+      },
+      {
+        "chunk_id": "CTX_041_006",
+        "token_count": 327,
+        "relevance_score": 0.5851
+      },
+      {
+        "chunk_id": "CTX_041_007",
+        "token_count": 235,
+        "relevance_score": 0.3066
+      },
+      {
+        "chunk_id": "CTX_041_008",
+        "token_count": 379,
+        "relevance_score": 0.3506
+      },
+      {
+        "chunk_id": "CTX_041_009",
+        "token_count": 129,
+        "relevance_score": 0.2192
+      },
+      {
+        "chunk_id": "CTX_041_010",
+        "token_count": 207,
+        "relevance_score": 0.8498
+      },
+      {
+        "chunk_id": "CTX_041_011",
+        "token_count": 208,
+        "relevance_score": 0.9396
+      },
+      {
+        "chunk_id": "CTX_041_012",
+        "token_count": 208,
+        "relevance_score": 0.4487
+      },
+      {
+        "chunk_id": "CTX_041_013",
+        "token_count": 359,
+        "relevance_score": 0.6619
+      },
+      {
+        "chunk_id": "CTX_041_014",
+        "token_count": 242,
+        "relevance_score": 0.0825
+      },
+      {
+        "chunk_id": "CTX_041_015",
+        "token_count": 348,
+        "relevance_score": 0.8869
+      },
+      {
+        "chunk_id": "CTX_041_016",
+        "token_count": 215,
+        "relevance_score": 0.9107
+      },
+      {
+        "chunk_id": "CTX_041_017",
+        "token_count": 394,
+        "relevance_score": 0.1332
+      },
+      {
+        "chunk_id": "CTX_041_018",
+        "token_count": 373,
+        "relevance_score": 0.1615
+      },
+      {
+        "chunk_id": "CTX_041_019",
+        "token_count": 288,
+        "relevance_score": 0.1155
+      },
+      {
+        "chunk_id": "CTX_041_020",
+        "token_count": 238,
+        "relevance_score": 0.5264
+      },
+      {
+        "chunk_id": "CTX_041_021",
+        "token_count": 144,
+        "relevance_score": 0.4726
+      },
+      {
+        "chunk_id": "CTX_041_022",
+        "token_count": 394,
+        "relevance_score": 0.1239
+      },
+      {
+        "chunk_id": "CTX_041_023",
+        "token_count": 382,
+        "relevance_score": 0.6976
+      },
+      {
+        "chunk_id": "CTX_041_024",
+        "token_count": 272,
+        "relevance_score": 0.0187
+      },
+      {
+        "chunk_id": "CTX_041_025",
+        "token_count": 281,
+        "relevance_score": 0.0016
+      },
+      {
+        "chunk_id": "CTX_041_026",
+        "token_count": 297,
+        "relevance_score": 0.992
+      },
+      {
+        "chunk_id": "CTX_041_027",
+        "token_count": 383,
+        "relevance_score": 0.2022
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_042",
+    "token_budget": 3684,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_042_001",
+        "token_count": 187,
+        "relevance_score": 0.2447
+      },
+      {
+        "chunk_id": "CTX_042_002",
+        "token_count": 215,
+        "relevance_score": 0.1535
+      },
+      {
+        "chunk_id": "CTX_042_003",
+        "token_count": 316,
+        "relevance_score": 0.7444
+      },
+      {
+        "chunk_id": "CTX_042_004",
+        "token_count": 148,
+        "relevance_score": 0.3454
+      },
+      {
+        "chunk_id": "CTX_042_005",
+        "token_count": 211,
+        "relevance_score": 0.0774
+      },
+      {
+        "chunk_id": "CTX_042_006",
+        "token_count": 331,
+        "relevance_score": 0.7205
+      },
+      {
+        "chunk_id": "CTX_042_007",
+        "token_count": 261,
+        "relevance_score": 0.3723
+      },
+      {
+        "chunk_id": "CTX_042_008",
+        "token_count": 298,
+        "relevance_score": 0.1144
+      },
+      {
+        "chunk_id": "CTX_042_009",
+        "token_count": 318,
+        "relevance_score": 0.4237
+      },
+      {
+        "chunk_id": "CTX_042_010",
+        "token_count": 354,
+        "relevance_score": 0.1933
+      },
+      {
+        "chunk_id": "CTX_042_011",
+        "token_count": 393,
+        "relevance_score": 0.1281
+      },
+      {
+        "chunk_id": "CTX_042_012",
+        "token_count": 204,
+        "relevance_score": 0.3412
+      },
+      {
+        "chunk_id": "CTX_042_013",
+        "token_count": 110,
+        "relevance_score": 0.3402
+      },
+      {
+        "chunk_id": "CTX_042_014",
+        "token_count": 400,
+        "relevance_score": 0.476
+      },
+      {
+        "chunk_id": "CTX_042_015",
+        "token_count": 298,
+        "relevance_score": 0.9436
+      },
+      {
+        "chunk_id": "CTX_042_016",
+        "token_count": 287,
+        "relevance_score": 0.5009
+      },
+      {
+        "chunk_id": "CTX_042_017",
+        "token_count": 298,
+        "relevance_score": 0.561
+      },
+      {
+        "chunk_id": "CTX_042_018",
+        "token_count": 257,
+        "relevance_score": 0.0605
+      },
+      {
+        "chunk_id": "CTX_042_019",
+        "token_count": 340,
+        "relevance_score": 0.3468
+      },
+      {
+        "chunk_id": "CTX_042_020",
+        "token_count": 99,
+        "relevance_score": 0.2185
+      },
+      {
+        "chunk_id": "CTX_042_021",
+        "token_count": 144,
+        "relevance_score": 0.3418
+      },
+      {
+        "chunk_id": "CTX_042_022",
+        "token_count": 198,
+        "relevance_score": 0.6307
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_043",
+    "token_budget": 1545,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_043_001",
+        "token_count": 266,
+        "relevance_score": 0.582
+      },
+      {
+        "chunk_id": "CTX_043_002",
+        "token_count": 396,
+        "relevance_score": 0.9467
+      },
+      {
+        "chunk_id": "CTX_043_003",
+        "token_count": 99,
+        "relevance_score": 0.5581
+      },
+      {
+        "chunk_id": "CTX_043_004",
+        "token_count": 322,
+        "relevance_score": 0.0538
+      },
+      {
+        "chunk_id": "CTX_043_005",
+        "token_count": 162,
+        "relevance_score": 0.9327
+      },
+      {
+        "chunk_id": "CTX_043_006",
+        "token_count": 98,
+        "relevance_score": 0.3758
+      },
+      {
+        "chunk_id": "CTX_043_007",
+        "token_count": 146,
+        "relevance_score": 0.3851
+      },
+      {
+        "chunk_id": "CTX_043_008",
+        "token_count": 155,
+        "relevance_score": 0.41
+      },
+      {
+        "chunk_id": "CTX_043_009",
+        "token_count": 305,
+        "relevance_score": 0.9062
+      },
+      {
+        "chunk_id": "CTX_043_010",
+        "token_count": 357,
+        "relevance_score": 0.1479
+      },
+      {
+        "chunk_id": "CTX_043_011",
+        "token_count": 265,
+        "relevance_score": 0.8907
+      },
+      {
+        "chunk_id": "CTX_043_012",
+        "token_count": 184,
+        "relevance_score": 0.5241
+      },
+      {
+        "chunk_id": "CTX_043_013",
+        "token_count": 93,
+        "relevance_score": 0.8338
+      },
+      {
+        "chunk_id": "CTX_043_014",
+        "token_count": 112,
+        "relevance_score": 0.1036
+      },
+      {
+        "chunk_id": "CTX_043_015",
+        "token_count": 367,
+        "relevance_score": 0.6805
+      },
+      {
+        "chunk_id": "CTX_043_016",
+        "token_count": 317,
+        "relevance_score": 0.2405
+      },
+      {
+        "chunk_id": "CTX_043_017",
+        "token_count": 91,
+        "relevance_score": 0.1289
+      },
+      {
+        "chunk_id": "CTX_043_018",
+        "token_count": 136,
+        "relevance_score": 0.7779
+      },
+      {
+        "chunk_id": "CTX_043_019",
+        "token_count": 199,
+        "relevance_score": 0.7577
+      },
+      {
+        "chunk_id": "CTX_043_020",
+        "token_count": 344,
+        "relevance_score": 0.5727
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_044",
+    "token_budget": 1575,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_044_001",
+        "token_count": 347,
+        "relevance_score": 0.248
+      },
+      {
+        "chunk_id": "CTX_044_002",
+        "token_count": 376,
+        "relevance_score": 0.0679
+      },
+      {
+        "chunk_id": "CTX_044_003",
+        "token_count": 192,
+        "relevance_score": 0.4423
+      },
+      {
+        "chunk_id": "CTX_044_004",
+        "token_count": 185,
+        "relevance_score": 0.8585
+      },
+      {
+        "chunk_id": "CTX_044_005",
+        "token_count": 106,
+        "relevance_score": 0.283
+      },
+      {
+        "chunk_id": "CTX_044_006",
+        "token_count": 205,
+        "relevance_score": 0.0114
+      },
+      {
+        "chunk_id": "CTX_044_007",
+        "token_count": 130,
+        "relevance_score": 0.5291
+      },
+      {
+        "chunk_id": "CTX_044_008",
+        "token_count": 341,
+        "relevance_score": 0.3347
+      },
+      {
+        "chunk_id": "CTX_044_009",
+        "token_count": 198,
+        "relevance_score": 0.8118
+      },
+      {
+        "chunk_id": "CTX_044_010",
+        "token_count": 112,
+        "relevance_score": 0.2064
+      },
+      {
+        "chunk_id": "CTX_044_011",
+        "token_count": 127,
+        "relevance_score": 0.0778
+      },
+      {
+        "chunk_id": "CTX_044_012",
+        "token_count": 197,
+        "relevance_score": 0.7086
+      },
+      {
+        "chunk_id": "CTX_044_013",
+        "token_count": 323,
+        "relevance_score": 0.965
+      },
+      {
+        "chunk_id": "CTX_044_014",
+        "token_count": 214,
+        "relevance_score": 0.2916
+      },
+      {
+        "chunk_id": "CTX_044_015",
+        "token_count": 204,
+        "relevance_score": 0.1313
+      },
+      {
+        "chunk_id": "CTX_044_016",
+        "token_count": 333,
+        "relevance_score": 0.0789
+      },
+      {
+        "chunk_id": "CTX_044_017",
+        "token_count": 227,
+        "relevance_score": 0.8192
+      },
+      {
+        "chunk_id": "CTX_044_018",
+        "token_count": 120,
+        "relevance_score": 0.9302
+      }
+    ]
+  },
+  {
+    "query_id": "CA_Q_045",
+    "token_budget": 2133,
+    "candidate_chunks": [
+      {
+        "chunk_id": "CTX_045_001",
+        "token_count": 145,
+        "relevance_score": 0.8324
+      },
+      {
+        "chunk_id": "CTX_045_002",
+        "token_count": 305,
+        "relevance_score": 0.7053
+      },
+      {
+        "chunk_id": "CTX_045_003",
+        "token_count": 331,
+        "relevance_score": 0.2309
+      },
+      {
+        "chunk_id": "CTX_045_004",
+        "token_count": 128,
+        "relevance_score": 0.8386
+      },
+      {
+        "chunk_id": "CTX_045_005",
+        "token_count": 89,
+        "relevance_score": 0.6229
+      },
+      {
+        "chunk_id": "CTX_045_006",
+        "token_count": 237,
+        "relevance_score": 0.3806
+      },
+      {
+        "chunk_id": "CTX_045_007",
+        "token_count": 80,
+        "relevance_score": 0.3624
+      },
+      {
+        "chunk_id": "CTX_045_008",
+        "token_count": 217,
+        "relevance_score": 0.5287
+      },
+      {
+        "chunk_id": "CTX_045_009",
+        "token_count": 397,
+        "relevance_score": 0.9838
+      },
+      {
+        "chunk_id": "CTX_045_010",
+        "token_count": 387,
+        "relevance_score": 0.8896
+      },
+      {
+        "chunk_id": "CTX_045_011",
+        "token_count": 128,
+        "relevance_score": 0.7975
+      },
+      {
+        "chunk_id": "CTX_045_012",
+        "token_count": 173,
+        "relevance_score": 0.2601
+      },
+      {
+        "chunk_id": "CTX_045_013",
+        "token_count": 286,
+        "relevance_score": 0.7828
+      },
+      {
+        "chunk_id": "CTX_045_014",
+        "token_count": 197,
+        "relevance_score": 0.765
+      },
+      {
+        "chunk_id": "CTX_045_015",
+        "token_count": 256,
+        "relevance_score": 0.0092
+      },
+      {
+        "chunk_id": "CTX_045_016",
+        "token_count": 381,
+        "relevance_score": 0.6682
+      },
+      {
+        "chunk_id": "CTX_045_017",
+        "token_count": 364,
+        "relevance_score": 0.4881
+      },
+      {
+        "chunk_id": "CTX_045_018",
+        "token_count": 161,
+        "relevance_score": 0.4745
+      },
+      {
+        "chunk_id": "CTX_045_019",
+        "token_count": 306,
+        "relevance_score": 0.4584
+      },
+      {
+        "chunk_id": "CTX_045_020",
+        "token_count": 172,
+        "relevance_score": 0.1837
+      }
+    ]
+  }
+]

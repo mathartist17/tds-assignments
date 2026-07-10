@@ -1,0 +1,5 @@
+{
+  "selection_rule": "Sort candidate_chunks by relevance_score descending (ties broken by chunk_id ascending). Walk this order once, keeping a running token total: if a chunk's token_count fits within the remaining token_budget, select it and add its tokens to the running total; otherwise skip it and continue to the next chunk (do not stop at the first chunk that does not fit).",
+  "assembly_rule": "Take the selected chunks in relevance_score-descending order c1 (highest) .. cn (lowest). Build the final sequence by alternating from the outside in: c1 goes to position 0, c2 goes to the last position, c3 to position 1, c4 to the second-to-last position, and so on -- the most relevant selected chunks anchor both ends of the context and the least relevant selected chunk ends up in the middle.",
+  "output": "JSON object mapping query_id to an array of the selected chunk_id strings in final assembled order."
+}
